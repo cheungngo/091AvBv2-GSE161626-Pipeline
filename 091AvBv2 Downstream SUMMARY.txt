@@ -1,0 +1,598 @@
+==============================================================================
+ABC DOWNSTREAM ANALYSIS — CONSOLIDATED SUMMARY
+GSE161626 — DOI psychedelic (5-HT2A) persistent H3K27ac enhancer targets, 7d
+==============================================================================
+Generated         : 2026-10-01 11:00:11
+Dataset           : GSE161626 — DOI psychedelic, mouse frontal cortex H3K27ac
+Gene source       : final_gene_list_final.txt (curated mouse protein-coding)
+Analysis genes    : 4362  (UP=2895, DOWN=1467)
+Genes with ABC    : 4362
+STRING network    : 22 nodes, 12 edges (conf>=0.7, taxon 10090)
+ORA cutoff        : adjusted P < 0.05
+GSEA cutoff       : FDR q < 0.25
+
+==============================================================================
+1. TOP GENES BY ABC SCORE (with enhancer direction)
+==============================================================================
+   1. Rhox9              ABC=39.176   DOWN
+   2. Rhox5              ABC=38.5847  DOWN
+   3. Wdr44              ABC=2.1909   DOWN
+   4. Mcf2               ABC=1.8667   UP
+   5. Sox3               ABC=1.7535   UP
+   6. Atp11c             ABC=0.8336   UP
+   7. Gm7073             ABC=0.8333   UP
+   8. Klhl13             ABC=0.7558   DOWN
+   9. Pola1              ABC=0.7423   DOWN
+  10. Btbd35f23          ABC=0.6493   DOWN
+  11. Pcyt1b             ABC=0.6169   DOWN
+  12. Slitrk4            ABC=0.5677   UP
+  13. Cul2               ABC=0.5249   DOWN
+  14. AU015836           ABC=0.477    DOWN
+  15. Gm5941             ABC=0.4728   UP
+  16. Btbd35f18          ABC=0.4411   DOWN
+  17. Rtl8a              ABC=0.4328   DOWN
+  18. Tbx22              ABC=0.4199   UP
+  19. Rhox13             ABC=0.401    DOWN
+  20. Cntnap5a           ABC=0.3769   UP
+
+==============================================================================
+2. ENRICHMENT (ORA) — SIGNIFICANT TERM COUNTS
+==============================================================================
+
+  [ALL targets]
+    GO_Biological_Process_2023             8 significant terms
+    GO_Molecular_Function_2023             0 significant terms
+    GO_Cellular_Component_2023             0 significant terms
+    KEGG_2019_Mouse                        11 significant terms
+    WikiPathways_2019_Mouse                0 significant terms
+    Reactome_2022                          2 significant terms
+    MSigDB_Hallmark_2020                   1 significant terms
+    MGI_Mammalian_Phenotype_Level_4_2021   22 significant terms
+    TRRUST_Transcription_Factors_2019      0 significant terms
+
+  [UP targets]
+    GO_Biological_Process_2023             10 significant terms
+    KEGG_2019_Mouse                        6 significant terms
+    Reactome_2022                          5 significant terms
+    MGI_Mammalian_Phenotype_Level_4_2021   12 significant terms
+
+  [DOWN targets]
+    GO_Biological_Process_2023             0 significant terms
+    KEGG_2019_Mouse                        0 significant terms
+    Reactome_2022                          0 significant terms
+    MGI_Mammalian_Phenotype_Level_4_2021   0 significant terms
+
+==============================================================================
+3. TOP 10 ENRICHED TERMS PER LIBRARY — ALL TARGETS
+==============================================================================
+
+--- GO_Biological_Process_2023 ---
+  • Synapse Organization (GO:0050808)
+        adjP=3.02e-04  CombinedScore=44.9
+        APP, PTPRS, PLXND1, CTNND2, TNC, LRRC4, ZDHHC2, CDH2, NRCAM, APPL1, CAST,
+        KIRREL3, UNC13B, UNC13C, DBNL, DSCAM, MUSK, F2R, ANK3, DKK1, DNM3, CACNB3,
+        CACNB4, MAPT, PDZRN3, SHANK2, GPM6A, NLGN1, ZC4H2, NRXN1, LRP4, CDC42, SLITRK2,
+        SLITRK1, SPOCK2, DVL1, SLITRK3, SLITRK6, APBB2, LRRC4C, PAK3, LRRC4B, SNCA,
+        NTNG1, RAB39B, POU4F1, KY, PTPRD, SLC8A3, SDK1, REST, PCDHB6, AGRN, CBLN3, SDK2,
+        ADGRL3
+  • Cell-Cell Adhesion Via Plasma-Membrane Adhesion Molecules (GO:0098742)
+        adjP=3.24e-03  CombinedScore=29.8
+        ITGB1, TENM1, CD84, TENM2, ITGAM, PTPRS, TENM3, LRRC4, PTPRM, CDH8, ROBO1, CDH6,
+        CLDN22, CDH5, ALCAM, CDH2, CLDN23, HMCN1, SCARF1, KIRREL3, CXADR, DSCAM, UNC5D,
+        TGFBR2, CLDN10, CEACAM1, CLDN9, CDH10, CEACAM5, CDH11, CLDN12, IL1RAPL1, CDH12,
+        CDHR3, CLDN16, DSCAML1, CDH18, CRB1, NLGN1, AMIGO1, NEXN, IGSF21, SLITRK2,
+        SLITRK1, CDH22, SLITRK3, LRRC4C, LRRC4B, NTNG1, CADM4, CADM1, CNTN6, CRTAM,
+        IGSF11, PTPRD, SDK1, PCDHB6, PLXNB3, FAT2, ADGRL1, CNTN4, FAT4, SDK2, ADGRL3,
+        NECTIN1
+  • Nervous System Development (GO:0007399)
+        adjP=4.98e-03  CombinedScore=20.9
+        CHRM2, CNTFR, NCKAP1, CHRM3, APP, PLXND1, MYT1L, ZDHHC2, RPS6KA3, SOX3, EDNRB,
+        DPYSL4, CDH2, ADGRA2, NRCAM, EPHB1, SOX4, SH3GL2, CDK5RAP2, KIRREL3, MBNL1,
+        MEF2C, RBFOX1, SRRM4, RBFOX3, DSCAM, DYRK1A, LIG4, SOX11, SDHA, POU3F3, FEZ1,
+        ADGRB1, KCNQ2, TYRO3, WDPCP, LY6H, UNC119B, GPM6A, INTU, DLX6, ZC4H2, EFNA5,
+        NPAS1, SNTG2, BTBD3, PDGFC, DVL1, ST8SIA4, NDP, ECT2, BRINP3, GPM6B, JAG1,
+        CNTN6, ZBTB16, ST8SIA2, ARHGAP26, AHI1, SDK1, FGF14, GDNF, DLG4, PCDHB6, FAT4,
+        SERPINI1, CNTN4, ITM2B, SDK2, TENM1, GRIK1, VLDLR, LDB2, PKD2, ROBO1, SHH, ZIC1,
+        JARID2, DACT1, APC2, TRPC5, ADGRV1, DBNL, APAF1, UTP11, NOG, PAX6, GFRA1, PROX1,
+        ECRG4, TGFBR1, GFRA4, DNM3, ZEB2, NAV3, DCX, RAPGEF5, DAGLB, DSCAML1, MET,
+        SHANK2, HDAC4, NLGN1, PLPPR1, NRXN1, CAPG, PTN, TRAK1, PTS, GBX2, PTPRZ1,
+        SLITRK1, ERBB4, SPOCK2, ADAM23, NTF3, SLITRK6, IGF2BP3, BPNT1, HES1, IGF2BP2,
+        GSN, LIMK1, FBXL17, LSAMP, SEMA4F, POU4F1, GRHL2, MAB21L2, APBA1, ATXN10, ERCC6,
+        MDGA2, MDGA1, ADGRL3
+  • Positive Regulation Of Cell Projection Organization (GO:0031346)
+        adjP=1.95e-02  CombinedScore=25.3
+        CHODL, DDR1, CAMK2B, NLGN1, TENM3, PLXND1, AMIGO1, PLPPR5, STMN2, TWF1, NDNF,
+        PTN, ROBO1, FUT9, SLITRK1, DPYSL3, DVL1, PLXNA2, MAP6, ALKAL2, SCARF1, ARSB,
+        PLXNA4, FZD1, CDKL5, MUSK, KIDINS220, MAGI2, ATP1B2, TIAM2, PTPRD, RIT2, DLG4,
+        LRRC7, CAPRIN2, IL1RAPL1, PLXNB3, RAPGEF1, RAPGEF2, ROR1, PRKD1, ROR2, SERPINI1,
+        TOX, EPHA3, DDR2
+  • Neuron Projection Morphogenesis (GO:0048812)
+        adjP=1.95e-02  CombinedScore=22.9
+        APP, NCKAP1, CNTNAP2, CTNND2, DOCK7, ALCAM, CPNE1, DIP2A, NRCAM, ATP7A, EPHB1,
+        NEFH, MEF2A, DBNL, ANK3, DICER1, NGF, ISL1, PAX2, SLC9A6, ALS2, PARD3, ADGRB1,
+        TMEM106B, TNIK, KIF20B, DSCAML1, GPM6A, NLGN1, PLPPR4, LRP4, CDC42, PARD6B,
+        SLITRK2, MAP2, SLITRK1, BTBD3, SLITRK4, DVL1, NTF3, SLITRK3, SLITRK6, MAP6,
+        SLITRK5, CTNNA2, PAK3, NTNG1, NTNG2, SPAG6, DTNBP1, POU4F1, MYO16, DLG4, CNTN4
+  • Epithelial Cell Migration (GO:0010631)
+        adjP=1.95e-02  CombinedScore=38.4
+        SMAD4, STARD13, PLXND1, NOS3, STAT1, TNFSF12, PXN, PRKX, CEL, RHOA, LOXL2, DPP4,
+        FERMT1, ZEB2, PIK3CA, ADGRA2, DAAM2, GIPC1, KIT, CYP1B1, FAT2, PKN2, PKN1
+  • Positive Regulation Of Neuron Projection Development (GO:0010976)
+        adjP=3.64e-02  CombinedScore=24.0
+        ALK, DDR1, CAMK2B, NLGN1, TENM3, PLPPR5, STMN2, TWF1, NDNF, VLDLR, PTN, LRP8,
+        FUT9, DPYSL3, ALKAL2, SCARF1, ARSB, FZD1, MUSK, KIDINS220, MAGI2, ATP1B2,
+        ZDHHC15, TUBB2B, RIT2, LRRC7, CAPRIN2, RAPGEF1, PLXNB3, RAPGEF2, ROR1, PRKD1,
+        ROR2, SERPINI1, TOX, EPHA3, DDR2
+  • Cell Morphogenesis Involved In Neuron Differentiation (GO:0048667)
+        adjP=4.75e-02  CombinedScore=24.3
+        APP, PLPPR4, DOCK7, LRP4, PARD6B, SLITRK2, MAP2, SLITRK1, BTBD3, SLITRK4, DVL1,
+        SLITRK3, SLITRK6, MAP6, SLITRK5, NRCAM, CTNNA2, PAK3, NEFH, MEF2A, NTNG1, NTNG2,
+        MEF2C, ANK3, ISL1, POU4F1, PAX2, PARD3, ADGRB1, TMEM106B, CNTN4, DSCAML1
+
+--- KEGG_2019_Mouse ---
+  • cAMP signaling pathway
+        adjP=1.02e-04  CombinedScore=31.6
+        CHRM2, GLP1R, RYR2, PDE3B, CALML3, OXT, GLI3, EDNRA, AKT3, PDE4B, AKT1, SOX9,
+        PRKACA, TSHB, VAV3, GHSR, MAP2K1, EDN2, FSHB, PDE4D, F2R, ATP1B4, ATP1B2, SSTR1,
+        SSTR2, RHOA, VAV1, ADCYAP1, CREB1, PIK3CA, FSHR, ACOX3, MYL9, CFTR, RAPGEF4,
+        CREB5, HCN4, CAMK2B, GRIA2, ADCYAP1R1, CAMK2D, GPR119, ROCK2, PTGER3, CAMK2A,
+        GNAI3, ADCY3, ADRB1, PIK3R1, ADCY1, CACNA1F, PLD1, GNAI1, ADCY5, HCAR2, MAPK9,
+        GRIN2A, MC2R, MAPK8, GRIA3, GABBR2, PTCH1, ATP2B4, NFATC1, GCG, ATP2B2, ATP2B1,
+        GRIN2B, NFKB1, MAPK10, POMC, AFDN, GRIN3A, SST, FXYD2, FXYD1, PDE3A, CALM1
+  • Axon guidance
+        adjP=2.39e-03  CombinedScore=22.0
+        ITGB1, SEMA5B, NRP1, LRRC4, RND1, ROBO1, PPP3CA, SHH, CFL1, EPHB1, EPHA7, TRPC5,
+        EPHA6, ARHGEF12, TRPC6, UNC5A, TRPC3, EPHA8, SEMA6D, UNC5D, RHOA, RGMA, ENAH,
+        PIK3CA, PARD3, MYL9, MET, EPHA3, EPHA2, CAMK2B, CAMK2D, ROCK2, SEMA3D, CAMK2A,
+        NTN4, GNAI3, PARD6G, PIK3R1, EFNA5, PRKCZ, GNAI1, MYL12B, EFNB2, CDC42, EFNB1,
+        PARD6B, ABLIM2, PLXNA2, SLIT3, PLCG1, LRRC4C, PAK3, SRGAP1, PLXNA4, NTNG1,
+        NTNG2, PTCH1, SEMA4C, LIMK1, NFATC3, NFATC2, SEMA4F, PTK2, PLXNB3
+  • Hedgehog signaling pathway
+        adjP=2.78e-03  CombinedScore=36.9
+        EVC2, CSNK1G3, SMURF2, SMURF1, PTCH1, CUL1, IHH, ARRB1, CSNK1D, GLI3, GLI2, SHH,
+        KIF3A, SUFU, GPR161, SPOP, BCL2, GAS1, BTRC, PRKACA, CSNK1G2, CSNK1G1
+  • Regulation of lipolysis in adipocytes
+        adjP=2.78e-03  CombinedScore=31.9
+        INS1, IRS1, PDE3B, PTGER3, IRS4, GNAI3, AQP7, ADCY3, IRS2, ADRB1, ABHD5, ADCY1,
+        PIK3R1, PTGS2, GNAI1, ADCY5, PTGS1, AKT3, AKT1, PRKG2, PRKACA, PRKG1, TSHB,
+        INSR, FABP4, PIK3CA
+  • cGMP-PKG signaling pathway
+        adjP=3.09e-03  CombinedScore=19.0
+        INS1, IRS1, PDE3B, IRS4, CALML3, IRS2, ATP2A1, ADRA1A, SLC8A1, PIK3CG, MYLK,
+        PPP3CA, EDNRA, EDNRB, AKT3, AKT1, PRKG2, PRKG1, MEF2A, GUCY1A2, MAP2K1, MEF2C,
+        TRPC6, ATP1B4, ATP1B2, ADRA2C, ADRA2A, RHOA, AGTR1B, CREB1, PLCB4, PLCB1, MYL9,
+        SLC25A4, CREB5, ROCK2, GNAI3, ITPR2, ADCY3, ADRB1, ADCY1, CACNA1F, GNAI1, ADCY5,
+        KCNMB2, KCNMB4, KCNJ8, NOS3, INSR, NFATC3, ATP2B4, NFATC2, NFATC1, ATP2B2,
+        ATP2B1, SLC8A3, GNAQ, FXYD2, PDE3A, CALM1
+  • Rap1 signaling pathway
+        adjP=3.09e-03  CombinedScore=17.6
+        ITGB1, INS1, ITGAM, FLT4, CALML3, SIPA1L2, FGF1, SIPA1L3, CRKL, IGF1R, AKT3,
+        AKT1, MAP2K1, MAGI3, F2R, MAGI2, NGF, RHOA, APBB1IP, PLCB4, PIK3CA, ADORA2B,
+        PARD3, KIT, RAPGEF1, RAPGEF2, PRKD1, TLN1, RAPGEF5, PLCB1, RAPGEF6, MET, SKAP1,
+        EPHA2, RAPGEF4, CSF1R, GNAI3, ADCY3, PARD6G, PIK3R1, LPAR4, ADCY1, EFNA5, PRKCZ,
+        THBS1, GNAI1, ADCY5, RASGRP3, CDC42, GRIN2A, PARD6B, CNR1, PDGFD, PDGFC, FGF20,
+        PLCG1, MAP2K6, NGFR, ANGPT1, INSR, IGF1, GRIN2B, FGF16, AFDN, KITL, GNAQ, ID1,
+        CALM1, FGFR1, FGF10
+  • Renin secretion
+        adjP=3.79e-02  CombinedScore=15.6
+        ADCYAP1R1, PDE1C, PDE3B, GNAI3, ITPR2, CALML3, ADRB1, CACNA1F, GNAI1, AQP1,
+        ADCY5, PPP3CA, EDNRA, PRKG2, CLCA1, PRKACA, CLCA3A1, KCNJ2, GUCY1A2, EDN2, ACE3,
+        AGTR1B, ADCYAP1, CREB1, PLCB4, GNAQ, PDE3A, PLCB1, CALM1
+  • Gastric acid secretion
+        adjP=4.69e-02  CombinedScore=14.7
+        CAMK2B, CHRM3, CAMK2D, CAMK2A, GNAI3, ITPR2, ADCY3, CALML3, ADCY1, GNAI1, MYLK,
+        ADCY5, PRKACA, KCNJ2, CAR2, KCNK10, ATP1B4, KCNJ16, ATP1B2, SSTR2, PLCB4, SST,
+        KCNQ1, GNAQ, PLCB1, CALM1, KCNK2, CFTR
+  • Neurotrophin signaling pathway
+        adjP=4.84e-02  CombinedScore=12.0
+        CAMK2B, CAMK2D, IRS1, MAGED1, CAMK2A, CALML3, PIK3R1, FOXO3, CRKL, CDC42,
+        RPS6KA3, MAPK9, MAPK8, IRAK2, AKT3, ARHGDIB, NTF3, AKT1, PLCG1, MAP2K5, SH2B2,
+        MAP3K5, SH2B1, NGFR, MAP2K1, MAP3K1, RIPK2, SORT1, KIDINS220, GAB1, NGF, NFKB1,
+        RHOA, MAPK10, PIK3CA, TRAF6, BCL2, RAPGEF1, CALM1, SOS1, SOS2
+  • Adrenergic signaling in cardiomyocytes
+        adjP=4.84e-02  CombinedScore=11.0
+        CAMK2B, RYR2, CAMK2D, CAMK2A, GNAI3, ADCY3, CALML3, ADRB1, ADCY1, CACNA1F,
+        ADRA1A, SLC8A1, PIK3CG, GNAI1, ADCY5, PPP2R3D, AKT3, AKT1, SCN7A, PRKACA,
+        CACNG4, TPM2, CACNA2D1, ATP2B4, CACNA2D2, ATP1B4, PPP2R5A, ATP2B2, ATP1B2,
+        PPP2R3A, ATP2B1, AGTR1B, CACNB3, CACNB4, CREB1, PLCB4, PPP2R2C, PPP2R2B, KCNQ1,
+        GNAQ, FXYD2, TNNT2, BCL2, AGTR2, CALM1, PLCB1, CREB5, RAPGEF4
+
+--- Reactome_2022 ---
+  • Signal Transduction R-HSA-162582
+        adjP=2.78e-02  CombinedScore=13.3
+        CYFIP2, NCKAP1, WIPF3, ARAF, RXFP4, STMN2, RBPJ, FNBP1L, RXFP2, MYLK, GPR176,
+        HTR7, SOX17, GNAT3, AKT3, EPSTI1, AKT1, PROK2, PIP4K2A, VPS35, GNAT1, PIP4K2C,
+        WLS, CMKLR1, MEF2A, MEF2C, PRKCH, GABRG3, DKK1, GABRG2, DKK2, TRHR, DYNC1LI1,
+        DEPDC1B, MYL6, DYNC1LI2, IFT88, PARD3, GPR161, PSME4, SRFBP1, AGTR2, NUP98,
+        MYL9, CTBP1, PRKCZ, IQGAP3, FLRT2, NPBWR1, PDGFD, PDGFC, PIP5K1A, RDH14,
+        PIP5K1C, RDH13, PSMF1, PLCG1, ST3GAL3, FZD1, GPR17, NGFR, PHC2, STARD13, JAG1,
+        MCAM, NFATC1, GRIN2B, COL1A2, FAM135A, AGO4, PNOC, SNAI1, STRN, DZIP1, DAND5,
+        GPR18, NOX1, EZH2, GABRB2, CDKN1B, UCMA, ARPC1A, ADM, ARHGAP6, GLI3, ARHGAP4,
+        LRRC1, GLI2, SHH, HEY2, NUF2, RSPO2, RSPO3, DLGAP5, RSPO4, DUSP4, DUSP5, GPR37,
+        RIPK2, TCF12, TACR3, PTH2R, SIRT6, WNT9A, TACR1, DYNLL2, DUSP6, APBB1IP, NCOR2,
+        KAT2B, PSMA3, CD200R1, PLCB4, INCENP, LRRC7, PXDN, CDC42EP3, RAPGEF1, CDC42EP2,
+        RAPGEF2, GAS1, RARB, PLCB1, RGR, RAPGEF4, HBEGF, NPSR1, PLPPR1, GPR45, PLPPR4,
+        PLPPR5, ADCY1, ADCY5, PSMB2, NTF3, SPOP, RHO, YKT6, EVC2, P2RY12, CCL25, CENPU,
+        KIDINS220, STAT1, USP9X, MCF2, WDR11, ABI2, TAOK1, PSMC1, CENPK, ABI1, PKN2,
+        CENPO, PKN1, NOTUM, LGR6, LAMTOR3, FRK, LGR4, CHRM2, CHRM3, PLXND1, GPR68, NCF2,
+        IRS1, NAB1, GPR65, UBE2D3, CLSTN1, IRS4, RORA, IRS2, FGF1, YY1, STK10, CDH5,
+        HHAT, CYSLTR1, CYSLTR2, FNTA, RUVBL1, SCMH1, GRB10, TLE3, MAP2K1, USP7, LHCGR,
+        KCNH8, SWAP70, F2R, VRK2, ADCYAP1, MAPKAPK3, MFNG, UTS2, PGR, CSNK1G2, NSMAF,
+        KHDRBS2, KHDRBS3, TNKS, CUL1, ITPR2, RASAL1, FOXO3, RHOBTB1, SAV1, BCL2L11,
+        DDRGK1, EIF4EBP1, SLC38A9, SOCS6, DRD3, SRGAP1, SKIL, MAP2K5, NDC80, NFKB1,
+        STK24, CDK4, NOXA1, BCL2, NF2, MYD88, ITGB1, ARHGAP11A, ALK, FLT4, RASGRF2,
+        ECE1, ARRB1, TRH, ADRA1A, CDC73, PIK3CG, DUSP10, CAPZB, PRKG2, INSL3, PRKG1,
+        ACTR3, PLEKHG3, TRPC7, ACTR2, PLEKHG4, HSP90AA1, TRPC6, TRPC3, DST, VWF, ITGA3,
+        NRG2, KSR2, ARFGAP3, ADRA2C, NGF, ADRA2A, NRG3, PIK3CA, ADORA2B, NRG4, TRAF6,
+        ITGA8, XCL1, PIK3C3, DAGLB, SOS1, SOS2, BIRC2, HDAC4, GTF2A1, LEPROT, MRLN,
+        ROCK2, CXXC1, PLG, HDAC9, LRP6, CDC42, PARD6B, ZNRF3, POLR2A, PTPRZ1, P2RY2,
+        POLR2C, SLITRK3, POLR2E, NHS, SLITRK5, E2F3, CSK, CCL1, HNRNPA1, WASF1, SH2B2,
+        WASF3, SH2B1, H2AZ1, RNF20, PTPN18, ANGPT1, PCDH7, SEMA4F, APLN, TNRC6C, SST,
+        PRC1, CPNE8, APP, ZDHHC7, CRKL, CDC20, SOX2, RPS6KA3, SOX3, EDNRA, BAIAP2L1,
+        EDNRB, TNFSF10, SOX9, BTRC, SOX7, SOX4, PDHX, ACTN2, ACTN1, SRRM1, UHMK1, RUNX1,
+        BTC, TIAM2, RRAGC, SPATA13, TRIB1, TLN1, ROPN1, CFTR, EPHA2, ADCYAP1R1, INTU,
+        PDE1C, EPAS1, MAGED1, PIK3R4, TWF1, LPAR4, PIK3R1, MYL12B, MC2R, SCFD1, DSN1,
+        DHX34, ATP6V0A2, CCR1, RCC2, INSR, GREB1, IGF1, PTK2, CYP26A1, STAG2, ID2, ID1,
+        COL9A1, ID4, PDE3A, GRAP, CALM1, ACVRL1, NRP1, NRP2, PTPRS, CITED1, SH3KBP1,
+        FAF2, KIF14, PTPRJ, PTPRK, AATF, PCSK6, CHRDL1, PCSK5, QRFP, BRS3, AKAP12, MC4R,
+        PPP3CA, CCKAR, SH3PXD2A, SUFU, CCR6, DLAT, OXGR1, VAV3, SREBF1, EDN2, SYK, FSHB,
+        NOG, KREMEN1, RHOH, GFRA1, SORCS3, VAV1, RHOA, UCHL5, GFRA4, RHOB, CNKSR2,
+        ARHGEF9, NR5A2, KIF2A, FSHR, KIT, TAX1BP1, TFF3, KIF2B, DYNC1I2, NPB, PTGER3,
+        GNAI3, XIAP, PRKX, PRICKLE1, PTN, RFNG, TRAK1, GNAI1, CXCR3, GPC5, EPS15,
+        BCAP31, GABBR2, IL33, CAVIN1, MIB2, ERBIN, GCG, DSPP, RIT2, GPAM, ZDHHC9, DLC1,
+        MC5R, OTULIN, KBTBD7, MAMLD1, F2RL2, SPC25, TJP2, CD86, STEAP3, PRAG1, IHH,
+        PRDM1, TTF2, IGF1R, AMOT, RGS4, ARHGAP42, ARHGDIB, SH3GL2, ABCG8, GHSR, NANOS3,
+        ATP1B4, CYBB, TSC1, KCTD6, ADAM17, MYCN, COL4A2, CCNE1, COL4A1, TBL1XR1, COL4A5,
+        STAM2, PPID, GNAZ, TCF7, SEL1L, ARHGAP18, ADRB1, ARHGAP15, NUP160, RTN4,
+        RASGRP3, SCUBE2, HCAR2, ARHGAP22, ARHGAP21, GRK5, KIF3A, FGF20, RHPN1, ECT2,
+        WNT1, ATP6V1D, MYH10, FAM83B, BCL9L, SMAD4, PDHA1, SMURF2, SMURF1, CAV1, PTCH1,
+        MACO1, ARHGAP27, ARHGAP26, ESR1, ESR2, ARHGAP23, SEM1, FGF16, ARHGAP31, FER,
+        GNAL, GDNF, GNAQ, CNTN1, TAB3, MUC20, FGF10, FGFR1, PICALM, GLP1R, ABCD3, DOCK3,
+        YWHAB, DOCK9, DOCK7, PDE3B, TNFAIP3, OXT, ARHGEF10L, ATP2A1, LAMC2, LAMC1, RND3,
+        CHD1, RND1, SPRED2, SPRED1, CASP3, H2BC21, GRM8, PDE4B, IFT57, TSHB, DACT1,
+        TGIF1, ARHGEF12, NPY5R, PDE4D, ARHGEF19, PPP2R5A, SSTR1, WNT16, SSTR2, ETV4,
+        MMP9, YWHAZ, SSTR4, TGFBR1, TGFBR2, DNM3, GREM2, ALDH1A3, ZAP70, CREB1, ALS2,
+        RASA4, COL6A1, CAMK2B, RGS18, USP13, RGS17, CAMK2D, USP15, LAMA2, CAMK2A,
+        MOSPD2, OPRL1, ABHD17C, THBS1, PTHLH, DLL4, MAPK8, GNG2, WNT11, ERBB4, TRA2B,
+        NRIP1, S1PR1, RGS20, NCAM1, BUB3, RGS22, CLASP2, USP25, TCF7L1, KDM4C, TRAT1,
+        LIMK1, OPRK1, DLK1, SLC4A7, FMNL3, POMC, EEPD1, REST, ACKR4, ACKR2, VIM, PDE7B,
+        RBMX
+  • Neuronal System R-HSA-112316
+        adjP=2.78e-02  CombinedScore=16.5
+        KCNG3, ABAT, RIMS1, RPS6KA3, GNAT3, ARL6IP5, HOMER3, KCNH1, UNC13B, KCNH3,
+        KCNK10, KCNH7, ACTN2, CACNA2D1, KCNH8, KCNK13, CACNA2D2, GABRG3, GABRG2, CACNB3,
+        CACNB4, KCNQ1, KCNQ2, KCNQ5, STX1A, GRIA2, SLC22A1, SLC1A1, SLC1A2, LIN7A,
+        CACNA1E, CPLX1, SLC1A7, KCNV1, GRIN2A, KCNV2, KCNMB4, KCNN3, GRIA3, LRRC4B,
+        KCNF1, GRIN2B, PTPRD, GRIN3A, GNAL, CALM1, GABRB2, PTPRS, KCNK9, RASGRF2, GRIK1,
+        PANX1, GABRR3, GABRR2, ALDH2, LRRTM3, LRRTM4, LRRTM1, DLGAP1, SLC18A3, DBNL,
+        KCND2, KCND3, ABCC8, HTR3A, KCNAB1, SYN2, ARHGEF9, CREB1, LRRC7, IL1RAPL1, MAPT,
+        PLCB1, SHANK2, CAMK2B, HCN4, HCN3, NLGN1, CAMK2D, KCNA1, NRXN1, KCNA2, CAMK2A,
+        GNAI3, NRXN3, KCNA4, KCNA5, PRKX, ADCY1, AKAP5, GNAI1, ADCY5, GLRA1, GLRA2,
+        GNG2, SLITRK2, SLITRK1, ERBB4, SLITRK4, SLITRK3, SLITRK6, SLITRK5, CACNG4,
+        KCNJ2, GABRA2, BCHE, KCNJ5, GABBR2, GABRA6, KCNJ8, GABRA5, GABRA3, KCNJ16,
+        APBA1, KCNK1, KCNK2, KCNK3, HCN1
+
+--- MSigDB_Hallmark_2020 ---
+  • UV Response Dn
+        adjP=6.14e-03  CombinedScore=17.8
+        PHF3, NRP1, CDKN1B, IRS1, CELF2, SCHIP1, FHL2, PTPRM, PRDM2, VLDLR, LAMC1,
+        TENT4A, RND3, IGF1R, RGS4, AKT3, CCN1, ABCC1, MAGI2, DYRK1A, RUNX1, TGFBR2,
+        ARHGEF9, PLCB4, DDAH1, ADORA2B, KIT, MET, GCNT1, SRI, FBLN5, SCAF8, GRK5, SPOP,
+        APBB2, LDLR, MAP2K5, RBPMS, CAV1, NEK7, ATP2B4, ATP2B1, NFKB1, DAB2, COL3A1,
+        COL1A2, NFIB, DLC1, ID1, AGGF1, ADGRL2
+
+--- MGI_Mammalian_Phenotype_Level_4_2021 ---
+  • postnatal lethality, incomplete penetrance MP:0011086
+        adjP=1.46e-04  CombinedScore=28.7
+        ERRFI1, SPI1, ARAF, JADE1, RORA, UBE3A, AHR, PRDM1, HS6ST1, CRKL, SOX2, RIMS1,
+        SOX3, EDNRB, HERC2, MAGOH, AKT1, SMARCAD1, PRKACA, PITX2, MEF2A, POSTN, PRKCH,
+        SNRPN, MUSK, DSCAM, SLC35C1, DYRK1A, CACNA2D2, LMO7, TSC1, RUNX2, RUNX1,
+        ADCYAP1, SCNN1G, IFT88, ADAM17, MAF, MYCN, SLC9A6, COL4A1, GPD2, KCNQ2, PPIB,
+        CFTR, GRIA2, ADCYAP1R1, INTU, CTBP1, PRKDC, EPAS1, TMTC3, TWIST2, TNFRSF11B,
+        FBLN1, PIK3R1, GATA2, RAI1, MC2R, BRINP1, FLRT2, HMOX1, PPARGC1A, TRPM6, MYH10,
+        NKX2-3, SNX5, LRRC4B, JAG1, FOXF1, NEK7, ESRRG, NR2F2, IGF1, IGF2R, BMP4, AHI1,
+        SMTN, GNAL, DLG4, FMC1, SP4, BCL2, ID4, CPEB2, PICALM, ALK, RERE, NRP1, HIP1,
+        PTPRS, CELF4, PSIP1, TNFAIP3, MEOX2, PKD2, PHF6, RND3, GLI2, CSRP3, SHH, HEY2,
+        ZIC1, TK1, ACADM, ATP7A, SREBF1, EDN2, APAF1, PDE4D, TCF12, GAB1, EN1, PAX6,
+        PROX1, NGF, POMGNT1, YWHAZ, PAX2, MRAP, GAP43, PLCB4, ZEB1, PIK3CA, DPPA4,
+        TRAF6, FSHR, KIT, ITGA8, DCX, GAS1, DSCAML1, MDFI, SHANK2, HBEGF, OCA2, NFAT5,
+        CEBPB, KDM3B, PPM1L, LAMA2, MGRN1, SLC20A1, KCNA1, ADCY3, HSD17B4, NEXN, FIGN,
+        PTGS2, PTS, LRP6, GLRA1, POLR2A, SLITRK1, CNR1, PLAGL1, HSF2, NTF3, USP1, GPC3,
+        TNNI2, ZSWIM6, E2F3, JAM3, GABRA2, FOXB1, NOS3, GCGR, SORBS2, KLF3, SGPP1,
+        NELL2, GALC, SH3RF2, COL3A1, RIT1, TTC8, NFIB, DLC1, ASXL2, NOTUM, LPIN1, FRYL,
+        LGR4
+  • belly spot MP:0000373
+        adjP=1.78e-02  CombinedScore=51.6
+        MYO10, RPS7, PTCH1, DOCK7, SEMA4C, PAX3, MITF, PAX6, GLI3, ADAMTS20, SNRNP40,
+        EDNRB, RUVBL2, GPR161, MAGOH, KIT, PXDN, GPC3, PCBD1, RPL38
+  • abnormal frontal bone morphology MP:0000107
+        adjP=1.78e-02  CombinedScore=47.5
+        APAF1, MSX2, DLX6, SATB2, PTCH1, ZFAND5, NOG, SIX1, ARID5B, ASAP1, FBLN1, WNT9A,
+        GLI2, LRP6, EFNB1, MN1, SHH, SP3, ALX4, MSX1, SOS1
+  • reduced long term potentiation MP:0001473
+        adjP=2.18e-02  CombinedScore=23.5
+        CAMK2B, SLC24A2, APP, USP14, ADCYAP1R1, ROCK2, FMR1, CAMK2A, TNC, UBE3A, ZDHHC7,
+        GRIK2, VLDLR, AKAP5, SIPA1L2, LRP8, ADD2, RIMS1, MAPK9, GRIN2A, SPRED1, DPYSL4,
+        NETO1, ST8SIA4, DISC1, PAK3, LRRC4B, SNCA, TRPC5, CRBN, B3GAT1, CYBB, GRIN2B,
+        MMP9, ESR2, IGSF11, FGF14, CREB1, SP4, RARB, NSMF, MAPT, TRIB2, STX1A, ITM2B,
+        SHANK2
+  • hyperactivity MP:0001399
+        adjP=2.18e-02  CombinedScore=14.9
+        CYFIP2, APP, ARL6IP1, FOXI1, ZDHHC7, PKD2L2, BACH2, SCAMP5, AKT3, AKT1, HMCN1,
+        THSD7A, VSIG4, SCN1A, WSB2, LIMCH1, MYO7A, GABRG2, DYNC1LI2, EID2, FEZ1, KCNQ1,
+        NSMF, STX1A, ADCYAP1R1, L3MBTL3, MAOB, PRDM14, PCDH18, MC2R, C7, GSG1L, MAP6,
+        HIVEP2, PPARGC1A, RAB11FIP4, CDK17, IQSEC2, IFI44, GRIN2B, RPE65, ACER1, MEX3B,
+        GALNTL6, IGSF9B, NOX1, RAD18, DDR1, GABRB2, HIP1, TMEM151B, SH3KBP1, LRRC4,
+        PTPRK, VLDLR, CHRDL1, UCHL1, CCKAR, B3GALT2, FEZF2, APPL1, SLC18A3, KCND3,
+        ELMOD3, EN1, TACR1, SORCS2, AJAP1, TUBB2B, ZEB1, RAP2B, POC5, LRRC7, PXDN,
+        ALDOC, MAPT, PLCB1, ZDHHC23, ADCY3, ADCY1, GLRA1, NFIL3, STX6, DMD, ZSWIM6,
+        DISC1, CSMD1, LDLR, LCMT1, GABRA2, GABBR2, IL33, GABRA5, GABRA3, LSAMP, PLEKHA3,
+        TM9SF2, SH3RF2, GATM, ABI2, SMOC1, RAB3GAP2, KBTBD7, OTC, HDDC2, VKORC1L1,
+        ALDH1L1, STEAP3, FMR1, CLSTN1, TNC, ZBTB20, UBE3A, RGS4, FRRS1L, FBRSL1,
+        SMARCAD1, TNR, MACROD2, KCNH1, LMO1, CDKL5, KCNH7, CD300A, SHISA4, TBR1, SHISA9,
+        MID1, ADCYAP1, SLC9A6, RELL1, SCG3, DSC2, CSNK1G1, GRIA2, GPR88, CACNA1F, EFNA5,
+        ARHGAP21, BRINP1, SAFB2, KIF3C, DRD3, CD276, LRRC4B, RAP1GAP2, KCNF1, SMURF1,
+        SLC4A10, MSN, ESR1, BMP4, FGF14, GNAL, HOOK1, SP4, PHF14, SP5, EIF4G2, RAD9A,
+        CNTNAP2, ABCD2, MAST3, YWHAB, CELF4, AP1G1, CERS6, APAF1, USP42, SEZ6L, C1QL3,
+        YWHAZ, ADRA2A, PARD3B, ALDH1A3, CTDSP1, SHANK2, HDAC4, CAMK2B, MVK, CAMK2A,
+        USH1C, ZBTB43, RBM4B, HSD17B11, ABLIM2, CNR1, ERBB4, SLITRK6, E2F3, ZPLD1,
+        RNF20, PCDH9, LIMK1, DTNBP1, OTOGL, PPP2R2B, VIM, TAF2
+  • decreased body size MP:0001265
+        adjP=2.18e-02  CombinedScore=14.3
+        PANK2, SPI1, HPSE2, ARAF, XYLT1, HS6ST1, ZDBF2, SOX2, RPS6KA3, EDNRA, HERC2,
+        EDNRB, LIPI, AKT1, TNFSF11, RPL38, CDK5RAP2, MUSK, EBF1, CACNA2D2, MYO7A, RUNX2,
+        RUNX1, TWSG1, KCNQ2, CFTR, INTU, PCDH10, CTBP1, PIK3R1, GATA2, SLC5A3, ZMPSTE24,
+        DGUOK, ADAMTS18, ADAMTS17, HMOX1, SCAP, ARSB, SNX5, CTSA, NGFR, JAG1, CADM1,
+        FOXF2, NR2F2, IGF1, GRIN2B, MEX3C, PTK2, FOSL2, MANF, MEX3B, COL1A2, ID2, PAH,
+        ID1, NRP1, TOP2B, MOCS2, SLC44A2, KIF14, VLDLR, PHF6, GLI2, AKAP11, HEY2, IDS,
+        EDN2, MYOF, EN1, PAX3, SIRT6, PAX6, ASH1L, RHOB, ENAH, TMEFF2, PLCB4, ZEB1,
+        LRRC7, VAMP1, PLCB1, TLR4, MDFI, DDR2, HBEGF, OCA2, KCNA1, KCNA2, PRICKLE1,
+        GLRA1, EPCAM, NTF3, SLC17A5, DMD, DISC1, XDH, FOXB1, STAT1, TARBP2, TMCO1,
+        COL3A1, TTC8, NFIC, SMOC1, AGRN, LGR4, OTC, CHRM3, IRS1, ZBTB20, RORA, RORB,
+        TGM1, ATCAY, IPO9, SMARCAD1, PITX2, MAP3K4, POSTN, SNRPN, RPS7, SLC30A5, DYRK1A,
+        ARID5B, LIG4, MITF, LIFR, PDIA6, ADAM17, MAF, CACNB4, COL4A1, GPD2, ROR2, PPIB,
+        ZCCHC8, GRIA2, GLIS3, TNFRSF11B, FBLN1, PHB, NDRG1, CPLX1, ZFP36L2, SCUBE2,
+        PLXNA2, SMN1, TFAP2A, DHCR24, AHI1, LIN28B, GNAL, COPS5, DLG4, SP4, RCAN2, SP3,
+        CNTN1, BCL2, BLMH, PICALM, FGFR1, RERE, ALK, CNTNAP2, KDM5C, CELF4, TNFAIP3,
+        SIX1, LAMC1, DBH, PIK3C2A, LMOD3, AP1G1, CASP3, HYDIN, ATP7A, INSL3, GUSB,
+        TGIF1, SLC13A1, POU1F1, PDCD6IP, TRPC3, ETV1, NGF, YWHAZ, ARID1B, POMGNT1,
+        TRAF3, TRAF6, COL6A1, DCX, SOS1, HDAC4, CAMK2B, USP14, VAC14, KDM3B, LAMA2,
+        ROCK2, TYRP1, LRP4, CLCN1, PTHLH, LRP6, SV2B, NRIP1, TNNI2, WASF1, SH2B1, MYO10,
+        ATP2B2, DLK1, SGPP1, NELL2, GALC, TBX15, LPIN1, CLUAP1, CUL4B
+  • no abnormal phenotype detected MP:0002169
+        adjP=2.18e-02  CombinedScore=12.9
+        CYFIP2, SPI1, CHIC1, POP4, RBPJ, PTPDC1, GLS, MYLK, EPS8, UBASH3B, SOX17, AKT1,
+        PIP4K2A, VPS35, MEF2A, MEF2C, CACNA2D2, SOX11, DICER1, ISL1, GTPBP1, GABRG2,
+        PLBD1, FREM3, IL20RB, GATA2, PCDHA1, PDGFC, KCNMB2, PIP5K1A, ALX4, KCNMB4,
+        PROM1, ST3GAL1, ATG5, NKX2-2, BARD1, FZD1, B3GALNT1, NGFR, DNAH11, JAG1, CADM1,
+        NFATC3, ISX, COL1A2, GRIN3A, FXYD2, PKIA, CYP1A2, CYP1A1, REL, FAT2, PSMG1,
+        PLCH2, EZH2, WDR44, GLI2, MED14, SHH, IMPA2, RSPO3, TK1, TEAD1, TEAD4, MYOG,
+        CHST7, GPR37, ARG1, SIRT4, EN1, PAWR, PAX3, PRSS16, PAX6, TERF1, KAT2B, RARB,
+        HBEGF, PCYOX1, OCA2, ADCY3, PTGS2, ASCL2, GPR151, GBX2, FRZB, OLFML3, GBX1,
+        NTF3, DMD, LDLR, EVC2, P2RY12, GABRA6, STAT1, USP9X, NMNAT2, GPR6, POU4F1, AGRN,
+        LGR6, LIMS2, PLXND1, NAB1, TNC, RORB, FGF1, YY1, CDH5, SLC25A40, SMARCAD1,
+        PITX2, KPNA3, PIAS4, CPA1, SNRPN, MAGI2, ATP11C, FBXO15, VRK1, MITF, ALPPL2,
+        MFNG, PGR, ERG, PPEF1, DSC2, KPNB1, CUL9, CSF1R, FBLIM1, ITPR2, LIN7A, CORO1C,
+        BCL2L11, TNFRSF17, NDN, SMYD3, SMN1, MAP2K5, B3GALT5, NFKB1, COPS5, PTPRC, SP2,
+        NOXA1, SP5, MNAT1, CNIH3, ITGB1, ALK, KCNK9, FLT4, RASGRF2, CELF4, FHL2,
+        ADAMTS5, THBD, SCPEP1, SUMO1, FUNDC1, ITGAX, UBTF, TLK1, PRKG1, APAF1, LANCL1,
+        RAD23A, TNFRSF1B, NGF, ADRA2A, SLCO1C1, NRG4, PIK3C3, SLC25A4, SOS2, ITGA9,
+        CEBPB, NLGN1, SMPX, PCOLCE2, LUZP2, MLLT1, LRP8, COCH, MLLT6, LRP6, PRIMPOL,
+        CDC42, ENOX2, POLR2A, PTPRZ1, XIRP2, E2F3, CSK, FNIP2, E2F7, CACNG4, TBX4, KLF3,
+        TPCN2, TBX2, NAGK, KLF5, SST, CD247, CBLN4, CBLN3, KCNK3, CUL4B, ERRFI1, APP,
+        ACSM3, FOXI3, HS6ST2, SOX2, EDNRA, MAGOH, FBXO4, ARL6IP5, DPF3, KIF21A, HMCN1,
+        SOX9, SOX4, SCN1A, COG6, ACSL4, RUNX1, BTC, KCNQ1, PAPPA, ZFPM2, TRIB2, CFTR,
+        STX1A, EPHA2, ADCYAP1R1, INTU, FOXG1, IGSF1, TWIST2, PIK3R4, STC1, TRPM5, RBM10,
+        PTK2, CIDEC, CYP26A1, POLA1, SMTN, CDAN1, ID2, PDE3A, CC2D1B, IL21, ACVRL1,
+        TOP2B, RYR2, HIP1, SLC44A2, PTPRO, GRIK1, SLC35F1, PTPRJ, HCCS, EDA2R, AKAP12,
+        SUFU, KIF13A, ANKRD1, CCR6, VAV3, INSRR, KREMEN1, PROX1, VAV1, RHOA, CDCP1,
+        TNNT2, CNKSR3, TFEC, FAM181B, ALDOC, MAPT, TLR4, SLC20A1, HSD17B4, TMPRSS2,
+        XIAP, RFNG, FTMT, HSF2, CXCR3, APBB2, PLEKHA1, GCGR, MIB2, SORBS2, LBX1, FAP,
+        DLC1, ESYT3, TRIP11, FOXA3, CD83, GALNT13, PRDM1, ETS2, GALNT10, RGS4, KIF5C,
+        SH3GL2, LMO1, KIRREL3, MSX2, OSR1, SHISA4, MID1, ERN1, ADAM18, SCNN1G, ADAM17,
+        MYCN, POLG2, CCNE1, CD8A, MAP7D2, SCNN1A, COL4A6, SCG3, LMX1B, STAM2, ABCG2,
+        UBA7, HTRA4, PDS5B, PLD1, DDX60, CACNA1E, RTN4, RASGRP3, EFNB2, SDCBP, KCNV2,
+        GRK5, KIF3C, MSC, MYH10, TFAP2A, SMAD4, PNPT1, SMURF2, SMURF1, PTCH1, MSN, HELZ,
+        DNAJC13, ESR1, LRP1B, ESR2, VIL1, LIN28B, MYF6, TAB3, FGF10, FGFR1, KDM5C,
+        PSIP1, CLEC14A, LDB2, DBH, LAMC1, PKD2, HK2, LRRTM3, LRRTM1, SCARF1, TGIF1,
+        EGFL7, EGFL6, HUNK, ETV1, TGFBR1, TGFBR2, EPN3, DNM3, ALDH1A3, ZAP70, TBC1D1,
+        MYOD1, IRF1, IRF2, IRF8, B4GALT6, INA, HCN4, HLF, NRXN1, OPRL1, RNF7, NR2C1,
+        PTHLH, AGPAT4, DLL4, SV2B, CNR1, TBX22, FAM120C, ERBB4, TRA2B, SPOCK3, TBX20,
+        S1PR1, HES1, NCAM2, SNCA, TCF7L1, EYA1, NOS3, GALNT1, SHCBP1, ACKR4, SSBP3, HCN1
+  • abnormal anterior cardinal vein morphology MP:0004784
+        adjP=2.18e-02  CombinedScore=163.9
+        ACVRL1, DLL4, EFNB2, MYCN, PIK3CA, FLT4, NR2F2, RBPJ, GLI3
+  • abnormal long term potentiation MP:0002207
+        adjP=2.80e-02  CombinedScore=42.4
+        CAMK2B, APP, KCNH3, GABRA5, CTNND2, MBD1, CAMK2A, LIMK1, CYBB, UBE3A, GRIK2,
+        VLDLR, GNAI1, BCAN, DPP6, DISC1, GRIA3
+  • abnormal spatial working memory MP:0008428
+        adjP=2.80e-02  CombinedScore=26.1
+        CAMK2A, GPR88, PIK3R4, ZDHHC7, SPRED1, GRIN2A, BRINP1, ALDH2, PTPRZ1, LRRTM1,
+        ARL6IP5, PDE4B, IDS, HIVEP2, DISC1, LDLR, KCNH3, FOXB1, RPS7, IQSEC2, ADRA2C,
+        SORCS3, YWHAZ, TANC1, LRRC7, DLG4, MAPT, STX1A, ITM2B, OTC
+
+==============================================================================
+3b. TOP TERMS — UP-REGULATED TARGETS
+==============================================================================
+
+--- GO_Biological_Process_2023 (UP) ---
+  • Neuron Projection Morphogenesis (GO:0048812)   adjP=1.60e-03
+  • Synapse Organization (GO:0050808)   adjP=4.58e-03
+  • Nervous System Development (GO:0007399)   adjP=8.15e-03
+  • Axonogenesis (GO:0007409)   adjP=2.45e-02
+  • Regulation Of Cell Migration (GO:0030334)   adjP=2.53e-02
+  • Positive Regulation Of Filopodium Assembly (GO:0051491)   adjP=2.53e-02
+  • Cell Junction Assembly (GO:0034329)   adjP=2.92e-02
+  • Regulation Of Filopodium Assembly (GO:0051489)   adjP=2.92e-02
+  • Pteridine-Containing Compound Metabolic Process (GO:0042558)   adjP=3.29e-02
+  • Blood Vessel Morphogenesis (GO:0048514)   adjP=4.17e-02
+
+--- KEGG_2019_Mouse (UP) ---
+  • Axon guidance   adjP=3.15e-04
+  • cAMP signaling pathway   adjP=2.15e-03
+  • Regulation of lipolysis in adipocytes   adjP=6.22e-03
+  • cGMP-PKG signaling pathway   adjP=1.09e-02
+  • Rap1 signaling pathway   adjP=1.09e-02
+  • Platelet activation   adjP=3.68e-02
+
+--- Reactome_2022 (UP) ---
+  • Signal Transduction R-HSA-162582   adjP=4.87e-03
+  • Neuronal System R-HSA-112316   adjP=2.55e-02
+  • Axon Guidance R-HSA-422475   adjP=2.55e-02
+  • Tetrahydrobiopterin (BH4) Synthesis, Recycling, Salvage And Regulation   adjP=4.30e-02
+  • Nervous System Development R-HSA-9675108   adjP=4.74e-02
+
+--- MGI_Mammalian_Phenotype_Level_4_2021 (UP) ---
+  • postnatal lethality, incomplete penetrance MP:0011086   adjP=3.74e-07
+  • premature death MP:0002083   adjP=4.40e-03
+  • decreased body size MP:0001265   adjP=4.73e-03
+  • no abnormal phenotype detected MP:0002169   adjP=1.76e-02
+  • abnormal anterior cardinal vein morphology MP:0004784   adjP=1.76e-02
+  • postnatal lethality, complete penetrance MP:0011085   adjP=2.60e-02
+  • abnormal frontal bone morphology MP:0000107   adjP=2.60e-02
+  • increased aggression towards mice MP:0001353   adjP=2.60e-02
+  • abnormal spatial working memory MP:0008428   adjP=3.79e-02
+  • postnatal growth retardation MP:0001732   adjP=3.79e-02
+
+==============================================================================
+4. FUNCTIONAL CATEGORIES (data-driven from enriched terms)
+==============================================================================
+
+  [Synaptic/Neurotransm.]  150 genes
+        Iqsec2,  Il1rapl1,  Slitrk2,  Robo1,  Snca,  Trpc5,  Fmr1,  Plxna2,  Rab39b,
+        Trpc6,  Pak3,  Rgma,  En1,  Slitrk1,  Agrn,  Pou4f1,  Grk5,  Nrp1,  Slitrk6,
+        Dvl1,  Trib2,  Zc4h2,  Cdh8,  Lrrc4c,  Srgap1,  Zdhhc2,  Epha7,  Itgb1,
+        Cacna2d1,  Cdh2,  Met,  Sema6d,  Pard6b,  Nfatc2,  Efna5,  Pard3,  Nrcam,
+        Dscam,  Slitrk3,  App,  Fgf14,  Cacnb4,  Efnb1,  Rock2,  Unc5d,  Grik2,  Ptprs,
+        Sema3d,  Rps6ka3,  Zdhhc7,  Adcy1,  Camk2b,  Dbnl,  Kcna1,  Gnai1,  Ntng1,
+        Slit3,  Epha6,  Cbln3,  Cast,  Ptch1,  Sema4f,  Plxna4,  Nrxn1,  Musk,  Lrrc4b,
+        Gpr37,  Gpm6a,  Lrrc4,  Kirrel3,  Prkcz,  Unc13c,  Nfatc3,  Camk2d,  Plxnb3,
+        Myl12b,  Kcnh3,  Ntn4,  Tnc,  Epha3,  Adgrl3,  Cfl1,  Sdk2,  Pip5k1c,  Lrp4,
+        Rims1,  Pik3ca,  Cacnb3,  Rnd1,  Unc13b,  Rest,  Camk2a,  Cd247,  Ptprd,  Nlgn1,
+        Efnb2,  Pdzrn3,  Shh,  Add2,  Mbp,  Trpc3,  Dkk1,  Clstn1,  Shank2,  Kidins220,
+        Enah,  Grin2b,  Pax6,  Sema5b,  Myl9,  Ky,  Creb1,  Gnai3,  Pard6g,  Ephb1,
+        Pcdhb6,  Mapt,  Lrrtm3,  Wasf1,  Spock2,  Apbb2,  Plcg1,  Slc8a3,  Epha2,
+        Pik3r1,  Limk1,  Unc5a,  Ank3,  Dlg4,  Pde4b,  Ppp3ca,  Dnm3,  Syn2,  Cacna2d2,
+        Sdk1,  F2r,  Glra1,  Ptk2,  Dlg2,  Ntng2,  Ablim2,  Sema4c,  Plxnd1,  Epha8,
+        Rhoa,  Cdc42,  Appl1,  Arhgef12,  Chrm2,  Ctnnd2
+
+  [Signaling Cascades]  78 genes
+        Atp1b4,  Calml3,  Gpr119,  Gria3,  Vav1,  Cacna1f,  Adcyap1r1,  Pomc,  Sstr1,
+        Adcy3,  Creb5,  Ednra,  Adcyap1,  Gli3,  Cftr,  Rock2,  Oxt,  Adcy1,  Camk2b,
+        Gcg,  Gnai1,  Gabbr2,  Ptch1,  Fshr,  Fxyd1,  Ryr2,  Mapk10,  Camk2d,  Grin3a,
+        Calm1,  Ghsr,  Sox9,  Atp2b1,  Map2k1,  Edn2,  Rapgef4,  Sstr2,  Pik3ca,  Akt1,
+        Mc2r,  Camk2a,  Pld1,  Pde3a,  Vav3,  Gria2,  Adcy5,  Pde4d,  Afdn,  Nfatc1,
+        Acox3,  Grin2b,  Myl9,  Fshb,  Creb1,  Adrb1,  Gnai3,  Mapk8,  Atp1b2,  Ptger3,
+        Prkaca,  Akt3,  Hcn4,  Pik3r1,  Glp1r,  Pde3b,  Mapk9,  Grin2a,  Pde4b,  Atp2b2,
+        Nfkb1,  F2r,  Sst,  Rhoa,  Tshb,  Chrm2,  Hcar2,  Fxyd2,  Atp2b4
+
+  [Neuroplasticity/Trophic]  70 genes
+        Iqsec2,  Maged1,  Calml3,  Bcl2,  Traf6,  Tanc1,  Irs1,  Map3k5,  Lrrtm1,
+        Gpr88,  Ldlr,  Ids,  Ptprz1,  Rps6ka3,  Zdhhc7,  Camk2b,  Map3k1,  Ntf3,  Disc1,
+        Mapk10,  Sos1,  Camk2d,  Calm1,  Kcnh3,  Ywhaz,  Map2k1,  Pik3ca,  Gab1,  Akt1,
+        Sos2,  Map2k5,  Camk2a,  Ngfr,  Arl6ip5,  Ripk2,  Brinp1,  Foxb1,  Spred1,
+        Adra2c,  Kidins220,  Hivep2,  Lrrc7,  Otc,  Sh2b2,  Arhgdib,  Sort1,  Pik3r4,
+        Itm2b,  Mapk8,  Mapt,  Plcg1,  Akt3,  Stx1a,  Sorcs3,  Pik3r1,  Mapk9,  Grin2a,
+        Foxo3,  Rps7,  Dlg4,  Pde4b,  Nfkb1,  Irak2,  Sh2b1,  Crkl,  Rapgef1,  Rhoa,
+        Ngf,  Cdc42,  Aldh2
+
+==============================================================================
+5. TOP PPI HUB GENES (STRING)
+==============================================================================
+  Insr               degree=  3   ABC=0.198   UP
+  Zeb1               degree=  1   ABC=0.292   UP
+  Fgf16              degree=  1   ABC=0.184   UP
+  Cdh10              degree=  1   ABC=0.241   UP
+  Rmnd1              degree=  1   ABC=0.183   UP
+  Nifk               degree=  1   ABC=0.263   UP
+  Slitrk4            degree=  1   ABC=0.568   UP
+  Alas2              degree=  1   ABC=0.341   UP
+  Dcaf8l             degree=  1   ABC=0.221   UP
+  Gm3373             degree=  1   ABC=0.188   UP
+  Ott                degree=  1   ABC=0.266   UP
+  Vim                degree=  1   ABC=0.177   UP
+  Gnl3l              degree=  1   ABC=0.238   UP
+  Cdh19              degree=  1   ABC=0.185   DOWN
+  Zbtb2              degree=  1   ABC=0.183   UP
+  Slitrk2            degree=  1   ABC=0.238   UP
+  Snca               degree=  1   ABC=0.187   UP
+  Esr1               degree=  1   ABC=0.183   UP
+  Grb10              degree=  1   ABC=0.295   UP
+  Cul4b              degree=  1   ABC=0.221   DOWN
+  Gm3005             degree=  1   ABC=0.218   UP
+  Gm15085            degree=  1   ABC=0.294   UP
+
+==============================================================================
+6. PRERANK GSEA — SIGNIFICANT SETS (FDR < 0.25)
+==============================================================================
+
+--- MSigDB_Hallmark_2020 ---  (2 significant sets)
+  • Xenobiotic Metabolism                                      NES=-1.65  FDR=1.37e-01
+  • Interferon Alpha Response                                  NES=-1.46  FDR=1.46e-01
+
+--- KEGG_2019_Mouse ---  (1 significant sets)
+  • Staphylococcus aureus infection                            NES=-1.90  FDR=1.65e-01
+
+--- GO_Biological_Process_2023 ---  (0 significant sets)
+  (none)
+
+==============================================================================
+7. RNA-seq VALIDATION (7d vs VEH)
+==============================================================================
+  (RNA integration not run / RNA_means absent)
+
+==============================================================================
+8. OUTPUT FILES
+==============================================================================
+  DOWNSTREAM/enrichr/ALL/ALL_libraries.tsv.gz  (770 KB)
+  DOWNSTREAM/enrichr/ALL/GO_Biological_Process_2023.tsv  (1186 KB)
+  DOWNSTREAM/enrichr/ALL/GO_Cellular_Component_2023.tsv  (125 KB)
+  DOWNSTREAM/enrichr/ALL/GO_Molecular_Function_2023.tsv  (244 KB)
+  DOWNSTREAM/enrichr/ALL/KEGG_2019_Mouse.tsv  (83 KB)
+  DOWNSTREAM/enrichr/ALL/MGI_Mammalian_Phenotype_Level_4_2021.tsv  (1098 KB)
+  DOWNSTREAM/enrichr/ALL/MSigDB_Hallmark_2020.tsv  (16 KB)
+  DOWNSTREAM/enrichr/ALL/Reactome_2022.tsv  (413 KB)
+  DOWNSTREAM/enrichr/ALL/TRRUST_Transcription_Factors_2019.tsv  (103 KB)
+  DOWNSTREAM/enrichr/ALL/WikiPathways_2019_Mouse.tsv  (41 KB)
+  DOWNSTREAM/enrichr/DOWN/ALL_libraries.tsv.gz  (334 KB)
+  DOWNSTREAM/enrichr/DOWN/GO_Biological_Process_2023.tsv  (749 KB)
+  DOWNSTREAM/enrichr/DOWN/KEGG_2019_Mouse.tsv  (52 KB)
+  DOWNSTREAM/enrichr/DOWN/MGI_Mammalian_Phenotype_Level_4_2021.tsv  (733 KB)
+  DOWNSTREAM/enrichr/DOWN/Reactome_2022.tsv  (255 KB)
+  DOWNSTREAM/enrichr/UP/ALL_libraries.tsv.gz  (517 KB)
+  DOWNSTREAM/enrichr/UP/GO_Biological_Process_2023.tsv  (1043 KB)
+  DOWNSTREAM/enrichr/UP/KEGG_2019_Mouse.tsv  (69 KB)
+  DOWNSTREAM/enrichr/UP/MGI_Mammalian_Phenotype_Level_4_2021.tsv  (984 KB)
+  DOWNSTREAM/enrichr/UP/Reactome_2022.tsv  (355 KB)
+  DOWNSTREAM/figures/combined_dotplot.png  (164 KB)
+  DOWNSTREAM/figures/enrichr_ALL_GO_Biological_Process_2023.png  (101 KB)
+  DOWNSTREAM/figures/enrichr_ALL_KEGG_2019_Mouse.png  (72 KB)
+  DOWNSTREAM/figures/enrichr_ALL_MGI_Mammalian_Phenotype_Level_4_2021.png  (144 KB)
+  DOWNSTREAM/figures/enrichr_ALL_MSigDB_Hallmark_2020.png  (22 KB)
+  DOWNSTREAM/figures/enrichr_ALL_Reactome_2022.png  (30 KB)
+  DOWNSTREAM/figures/enrichr_UP_GO_Biological_Process_2023.png  (110 KB)
+  DOWNSTREAM/figures/enrichr_UP_KEGG_2019_Mouse.png  (46 KB)
+  DOWNSTREAM/figures/enrichr_UP_MGI_Mammalian_Phenotype_Level_4_2021.png  (120 KB)
+  DOWNSTREAM/figures/enrichr_UP_Reactome_2022.png  (58 KB)
+  DOWNSTREAM/figures/functional_categories.png  (34 KB)
+  DOWNSTREAM/figures/string_hubs.png  (57 KB)
+  DOWNSTREAM/functional_categories.tsv  (14 KB)
+  DOWNSTREAM/gsea_prerank/GO_Biological_Process_2023.tsv  (223 KB)
+  DOWNSTREAM/gsea_prerank/GO_Biological_Process_2023/gene_sets.gmt  (215 KB)
+  DOWNSTREAM/gsea_prerank/GO_Biological_Process_2023/gseapy.gene_set.prerank.report.csv  (223 KB)
+  DOWNSTREAM/gsea_prerank/GO_Biological_Process_2023/prerank_data.rnk  (107 KB)
+  DOWNSTREAM/gsea_prerank/KEGG_2019_Mouse.tsv  (45 KB)
+  DOWNSTREAM/gsea_prerank/KEGG_2019_Mouse/gene_sets.gmt  (43 KB)
+  DOWNSTREAM/gsea_prerank/KEGG_2019_Mouse/gseapy.gene_set.prerank.report.csv  (43 KB)
+  DOWNSTREAM/gsea_prerank/KEGG_2019_Mouse/prerank_data.rnk  (107 KB)
+  DOWNSTREAM/gsea_prerank/MSigDB_Hallmark_2020.tsv  (9 KB)
+  DOWNSTREAM/gsea_prerank/MSigDB_Hallmark_2020/gene_sets.gmt  (10 KB)
+  DOWNSTREAM/gsea_prerank/MSigDB_Hallmark_2020/gseapy.gene_set.prerank.report.csv  (9 KB)
+  DOWNSTREAM/gsea_prerank/MSigDB_Hallmark_2020/prerank_data.rnk  (107 KB)
+  DOWNSTREAM/string_hubs.tsv  (0 KB)
+  DOWNSTREAM/string_network.tsv  (1 KB)
+
+==============================================================================
+END OF SUMMARY
+==============================================================================

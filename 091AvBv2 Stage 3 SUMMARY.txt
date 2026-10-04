@@ -1,0 +1,449 @@
+================================================================================
+STAGE 3 — ABC REDUCTION, CONSOLIDATED SUMMARY
+GSE161626 — DOI psychedelic (5-HT2A) persistent H3K27ac enhancer targets, 7 days
+================================================================================
+Generated      : 2026-10-01 15:24:34
+Dataset        : GSE161626 — DOI (5-HT2A) persistent H3K27ac enhancers, 7d, mouse
+Input table    : /content/ABC_DOI/ABC_output/EnhancerPredictions_persistent_7d.tsv.gz
+Enhancer-gene pairs : 471819
+Raw target genes    : 21516
+
+Thresholds: direction purity > 0.70 | FDR < 0.05 | max|lfc| >= 0.25 | enhancers >= 2 | ABC >= 0.02 (if repaired)
+ORA FDR < 0.05 | GSEA FDR < 0.25 | STRING conf >= 0.70 taxon 10090
+
+================================================================================
+A. SCORE AUDIT
+================================================================================
+  stored ABC_score range : [0.0200, 39.1760]
+  repair mode            : repaired_from_AxC
+  score column used      : ABC_repaired
+  repaired ABC max       : 0.5248665342484397
+  NOTE: stored score exceeded 1; a true within-gene ABC fraction was rebuilt from AxC.
+
+================================================================================
+B. GENE-LEVEL COLLAPSE & ARCHITECTURE
+================================================================================
+  total genes           : 21516
+  direction counts      : {'MIXED': 15261, 'UP': 4408, 'DOWN': 1847}
+  artifact symbols      : 3159  (Rhox/Gm/Olfr/Vmn/Mir/Snord/Snhg/Rik ...)
+  mixed-direction (dropped from UP/DOWN) : 13245
+
+  Architecture diagnostics (non-artifact genes):
+    direction-purity median        : 0.632
+    fraction with purity >= 0.70   : 0.289
+    fraction with purity ~0.50     : 0.216  (noise flag if high)
+    enhancers/gene median          : 22.0
+    fraction single-enhancer genes : 0.000  (power-law failure mode if high)
+    repaired-score vs distance     : Spearman rho=-0.021  p=1.43e-41 (expect negative)
+  Figure: figures/architecture.png
+
+================================================================================
+C. HIGH-CONFIDENCE TARGET SET
+================================================================================
+  high-confidence genes : 5112  (UP=3794  DOWN=1318)
+
+  Top UP targets by enhancer-weighted LFC  [gene  w_lfc  max|lfc|  nEnh  bestABC]:
+     1. Cdh10            w_lfc=+1.082  max|lfc|=1.384  nEnh= 8  ABC=0.2378
+     2. Samd9l           w_lfc=+0.690  max|lfc|=1.748  nEnh= 9  ABC=0.1778
+     3. Atp11c           w_lfc=+0.655  max|lfc|=1.556  nEnh=40  ABC=0.0839
+     4. F9               w_lfc=+0.653  max|lfc|=1.556  nEnh=38  ABC=0.0874
+     5. Mcf2             w_lfc=+0.650  max|lfc|=1.556  nEnh=42  ABC=0.0869
+     6. Fgf13            w_lfc=+0.641  max|lfc|=1.556  nEnh=37  ABC=0.089
+     7. Acot10           w_lfc=+0.639  max|lfc|=1.384  nEnh=13  ABC=0.1528
+     8. Cdh12            w_lfc=+0.639  max|lfc|=1.384  nEnh=13  ABC=0.1529
+     9. Sox3             w_lfc=+0.621  max|lfc|=1.556  nEnh=45  ABC=0.0792
+    10. Slitrk5          w_lfc=+0.614  max|lfc|=1.291  nEnh=17  ABC=0.1026
+    11. Ldoc1            w_lfc=+0.605  max|lfc|=1.556  nEnh=50  ABC=0.0785
+    12. Smarcad1         w_lfc=+0.604  max|lfc|=0.948  nEnh= 7  ABC=0.2231
+    13. Hpgds            w_lfc=+0.604  max|lfc|=0.948  nEnh= 7  ABC=0.2231
+    14. Cdr1             w_lfc=+0.601  max|lfc|=1.556  nEnh=47  ABC=0.0768
+    15. Slc1a7           w_lfc=+0.598  max|lfc|=1.589  nEnh=22  ABC=0.0801
+    16. Podn             w_lfc=+0.598  max|lfc|=1.589  nEnh=22  ABC=0.0801
+    17. Scp2             w_lfc=+0.598  max|lfc|=1.589  nEnh=22  ABC=0.0801
+    18. Mbnl1            w_lfc=+0.595  max|lfc|=1.451  nEnh=23  ABC=0.0698
+    19. Fscb             w_lfc=+0.593  max|lfc|=1.837  nEnh=15  ABC=0.1301
+    20. Slitrk6          w_lfc=+0.591  max|lfc|=1.291  nEnh=14  ABC=0.1288
+    21. Czib             w_lfc=+0.588  max|lfc|=1.589  nEnh=23  ABC=0.0752
+    22. Cpt2             w_lfc=+0.588  max|lfc|=1.589  nEnh=23  ABC=0.0752
+    23. Rnd3             w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    24. Tas2r134         w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    25. Rbm43            w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    26. Nmi              w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    27. Tnfaip6          w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    28. Rif1             w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1085
+    29. Neb              w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1086
+    30. Arl5a            w_lfc=+0.583  max|lfc|=1.172  nEnh=18  ABC=0.1086
+
+  Top DOWN targets by enhancer-weighted LFC [gene  w_lfc  max|lfc|  nEnh  bestABC]:
+     1. Zik1             w_lfc=-0.697  max|lfc|=1.096  nEnh= 6  ABC=0.4101
+     2. Nlrp4b           w_lfc=-0.697  max|lfc|=1.096  nEnh= 6  ABC=0.4101
+     3. Zscan4b          w_lfc=-0.697  max|lfc|=1.096  nEnh= 6  ABC=0.4101
+     4. Zscan4c          w_lfc=-0.697  max|lfc|=1.096  nEnh= 6  ABC=0.4101
+     5. Zscan4-ps1       w_lfc=-0.697  max|lfc|=1.096  nEnh= 6  ABC=0.4101
+     6. Zscan4d          w_lfc=-0.482  max|lfc|=1.096  nEnh= 7  ABC=0.3386
+     7. Zscan4e          w_lfc=-0.451  max|lfc|=0.790  nEnh= 7  ABC=0.315
+     8. Zscan4f          w_lfc=-0.449  max|lfc|=0.790  nEnh= 8  ABC=0.2608
+     9. Zscan4-ps2       w_lfc=-0.423  max|lfc|=0.790  nEnh= 9  ABC=0.2144
+    10. Nlrp5            w_lfc=-0.401  max|lfc|=0.895  nEnh=24  ABC=0.107
+    11. Zfp112           w_lfc=-0.398  max|lfc|=0.895  nEnh=24  ABC=0.0792
+    12. Zfp235           w_lfc=-0.398  max|lfc|=0.895  nEnh=24  ABC=0.0812
+    13. Nlrp4e           w_lfc=-0.398  max|lfc|=0.895  nEnh=24  ABC=0.1079
+    14. V1rd19           w_lfc=-0.397  max|lfc|=0.895  nEnh=24  ABC=0.0801
+    15. Zfp180           w_lfc=-0.397  max|lfc|=0.895  nEnh=24  ABC=0.0801
+    16. Zfp114           w_lfc=-0.392  max|lfc|=0.853  nEnh=24  ABC=0.082
+    17. Zfp94            w_lfc=-0.392  max|lfc|=0.853  nEnh=24  ABC=0.082
+    18. Zfp61            w_lfc=-0.392  max|lfc|=0.853  nEnh=24  ABC=0.082
+    19. Zfp111           w_lfc=-0.392  max|lfc|=0.853  nEnh=24  ABC=0.082
+    20. Zfp109           w_lfc=-0.391  max|lfc|=0.853  nEnh=24  ABC=0.082
+    21. Gpr108           w_lfc=-0.390  max|lfc|=0.874  nEnh=14  ABC=0.152
+    22. Trip10           w_lfc=-0.390  max|lfc|=0.874  nEnh=14  ABC=0.152
+    23. Vav1             w_lfc=-0.390  max|lfc|=0.874  nEnh=14  ABC=0.152
+    24. Adgre1           w_lfc=-0.390  max|lfc|=0.874  nEnh=14  ABC=0.152
+    25. Zfp93            w_lfc=-0.389  max|lfc|=0.853  nEnh=23  ABC=0.0838
+    26. Abcf1            w_lfc=-0.385  max|lfc|=1.052  nEnh=13  ABC=0.1749
+    27. Gnl1             w_lfc=-0.381  max|lfc|=1.052  nEnh=13  ABC=0.1788
+    28. Prr3             w_lfc=-0.381  max|lfc|=1.052  nEnh=13  ABC=0.1788
+    29. H2-T24           w_lfc=-0.381  max|lfc|=1.052  nEnh=13  ABC=0.1791
+    30. Ppp1r10          w_lfc=-0.381  max|lfc|=1.052  nEnh=13  ABC=0.1791
+
+================================================================================
+D. OVER-REPRESENTATION (ORA) ON CLEANED SETS
+================================================================================
+
+  >>> HC_UP <<<
+    GO_Biological_Process_2023               0 significant terms
+    KEGG_2019_Mouse                          8 significant terms
+    Reactome_2022                            1 significant terms
+    MGI_Mammalian_Phenotype_Level_4_2021     0 significant terms
+
+    --- KEGG_2019_Mouse top terms (HC_UP) ---
+      • Taste transduction
+            adjP=1.09e-02  CombinedScore=26.3
+        TAS2R131, TAS2R110, TAS2R134, TAS2R113, TAS2R135, TAS2R136, TAS2R115, TAS2R116,
+        TAS2R117, TAS2R139, TAS2R119, P2RY4, SCN9A, P2RY1, TRPM5, SCN3A, GABRA5, TAS2R140,
+        GABRA3, TAS2R120, TAS2R143, TAS2R121, TAS2R144, TAS2R122, TAS2R123, TAS2R102,
+        TAS2R124, TAS2R103, TAS2R125, TAS2R126, TAS2R129, TAS2R109, SCN2A
+      • Tyrosine metabolism
+            adjP=2.07e-02  CombinedScore=30.9
+        DDC, MAOB, TOMT, MAOA, TYRP1, ADH7, TYR, ADH5, ADH4, ALDH1A3, TPO, ADH1, AOX4, TH,
+        DCT, AOX2, AOX3, AOX1
+      • Mucin type O-glycan biosynthesis
+            adjP=2.07e-02  CombinedScore=36.3
+        GALNT7, GALNT14, GALNT5, GALNT13, GALNT16, GALNT3, GALNT15, C1GALT1, C1GALT1C1,
+        B3GNT6, GALNTL5, GCNT3, GCNT4, GALNTL6
+      • Natural killer cell mediated cytotoxicity
+            adjP=2.33e-02  CombinedScore=15.9
+        SHC4, IFNA5, IFNA4, IFNA7, IFNA6, IFNA1, IFNA2, ARAF, PIK3R1, IFNA9, PPP3R1, PAK1,
+        CASP3, IFNAB, TNFSF10, MAPK1, CD244A, HRAS, IFNA11, IFNA12, IFNA13, MAP2K1,
+        IFNA14, FCER1G, IFNA15, IFNB1, SH2D1A, PRKCA, RAET1D, RAET1E, FASL, FCGR4, FAS,
+        LCP2, CD48, CD247, ULBP1, SOS2
+      • Hepatitis B
+            adjP=2.33e-02  CombinedScore=14.4
+        RB1, IFNA5, ATF2, IFNA4, IFNA7, DDX3X, IFNA6, IFNA1, IFNA2, ARAF, IFNA9, ELK1,
+        CASP8, CASP3, IFNAB, IKBKG, JAK2, HRAS, JAK1, IFNA11, IFNA12, IFNA13, MAP2K1,
+        IFNA14, IFNA15, ATP6AP1, PRKCA, FOS, CCNA1, CCNE2, IRF7, SOS2, TLR3, TLR2, PIK3R1,
+        MAPK8, IRAK1, MAPK1, EGR2, TGFB3, SLC10A1, IFNB1, NFKBIA, MAPK10, MAVS, FASL,
+        CYCT, FAS, TAB2
+      • Cytosolic DNA-sensing pathway
+            adjP=2.33e-02  CombinedScore=19.8
+        IFNA5, IFNA11, IFNA4, IFNA12, IL33, IFNA7, IFNA13, IFNA6, IFNA14, IFNA1, IFNA15,
+        IFNB1, IFNA2, IL18, IFNA9, NFKBIA, MAVS, POLR3A, IFNAB, IRF7, POLR3G, IKBKG,
+        POLR2L
+      • Measles
+            adjP=2.33e-02  CombinedScore=14.2
+        IFNA5, RAB9, IFNA4, IFNA7, IFNA6, CDKN1B, IFNA1, IFNA2, PIK3R1, IFNA9, IL2RG,
+        MAPK8, CASP8, IRAK1, CASP3, IFNAB, IKBKG, SLAMF1, JAK1, IFNA11, IFNA12, IFNA13,
+        IFNA14, IFNA15, IFNB1, MSN, HSPA2, FOS, EIF2S1, NFKBIA, MAPK10, IL1A, MAVS, CDK6,
+        CCNE2, FASL, IL2RA, CYCT, IRF7, FAS, EIF3H, TAB2, RAB9B, TLR2
+      • Hepatitis C
+            adjP=3.51e-02  CombinedScore=12.5
+        RB1, IFNA5, IFNA4, IFNA7, RNASEL, IFNA6, IFNA1, CD81, IFNA2, ARAF, PIK3R1, CLDN2,
+        IFIT1, IFNA9, EGFR, CLDN20, CASP8, PPP2R1B, CASP3, IFNAB, MAPK1, IKBKG, HRAS,
+        JAK1, IFNA11, IFNA12, IFNA13, MAP2K1, IFNA14, RSAD2, IFNA15, CLDN34D, IFNB1,
+        CFLAR, IFIT1BL1, EIF2S1, NFKBIA, CLDN10, OCLN, MAVS, CDK6, FASL, CYCT, IRF7, FAS,
+        SOS2, TLR3
+
+    --- Reactome_2022 top terms (HC_UP) ---
+      • P2Y Receptors R-HSA-417957
+            adjP=4.59e-03  CombinedScore=274.5
+        P2RY12, P2RY13, P2RY10, P2RY6, P2RY4, LPAR6, P2RY14, P2RY2, P2RY1, LPAR4
+
+  >>> HC_DOWN <<<
+    GO_Biological_Process_2023               4 significant terms
+    KEGG_2019_Mouse                          24 significant terms
+    Reactome_2022                            2 significant terms
+    MGI_Mammalian_Phenotype_Level_4_2021     0 significant terms
+
+    --- GO_Biological_Process_2023 top terms (HC_DOWN) ---
+      • Intermediate Filament Organization (GO:0045109)
+            adjP=1.39e-09  CombinedScore=239.2
+        KRT24, KRT23, KRT20, KRT40, KRT33B, KRT33A, KRT28, KRT27, KRT26, KRT25, KRT35,
+        KRT13, KRT34, KRT12, KRT32, KRT10, KRT31, KRT9, KRT19, KRT39, KRT17, KRT16, KRT15,
+        KRT36, KRT14
+      • Epithelial Cell Differentiation (GO:0030855)
+            adjP=5.84e-09  CombinedScore=132.6
+        EHF, HDAC1, KRT24, KRT23, GLI1, KRT20, KRT40, KRT33B, KRT33A, UPK1A, KRT28, KRT27,
+        AKT2, KRT26, KRT25, CPT1A, KRT35, KRT13, KRT34, KRT12, KRT32, KRT10, OVOL1, KRT31,
+        OVOL3, KRT9, KRT19, KRT39, KRT17, KRT16, WT1, KRT15, KRT36, KRT14
+      • Epithelium Development (GO:0060429)
+            adjP=5.97e-06  CombinedScore=72.2
+        EHF, KRT24, KRT23, KRT20, KRT40, KRT33B, KRT33A, UPK1A, KRT28, KRT27, KRT26, DVL1,
+        KRT25, CPT1A, TGFB1, KRT35, KRT13, KRT34, KRT12, KRT32, KRT10, KRT31, KRT9, KRT19,
+        KRT39, KRT17, KRT16, WT1, KRT15, KRT36, KRT14, TIMELESS
+      • Supramolecular Fiber Organization (GO:0097435)
+            adjP=9.80e-03  CombinedScore=25.2
+        AVIL, KRT24, KRT23, PLOD3, KRT20, CORO1B, KRT40, KRT33B, CNN2, KRT33A, EFEMP2,
+        KRT28, KRT27, KRT26, KRT25, NLRP5, MARCKSL1, CDSN, KRT35, KRT13, KIF24, KRT34,
+        KRT12, P3H4, TBCB, KRT32, KRT10, KRT31, TLE6, KRT9, CCDC88B, CLIP3, KRT19, KRT39,
+        KRT17, KRT16, KATNBL1, MYO1A, KRT15, KRT36, KRT14, CDC42EP2
+
+    --- KEGG_2019_Mouse top terms (HC_DOWN) ---
+      • Herpes simplex virus 1 infection
+            adjP=8.18e-14  CombinedScore=116.1
+        ZFP128, ZFP568, H2-T24, H2-T23, ZFP324, ZFP566, H2-T22, ZFP82, TNF, ZFP30, ZFP74,
+        AKT2, ZIK1, ZFP975, H2-M10.3, H2-M10.4, DDX58, ZFP658, H2-M10.1, H2-M10.2, ZFP94,
+        ZFP93, ZFP936, HCFC2, H2-T3, ZFP607A, ZFP607B, ZFP819, ZFP780B, ZFP84, TRAF6, LTA,
+        H2-M10.5, H2-M10.6, ZFP850, H2-D1, H2-M9, ZFP940, H2-M5, ZFP109, ZFP626, ZFP108,
+        H2-M2, H2-Q6, H2-M3, H2-Q7, H2-Q4, H2-M1, ZFP61, H2-Q2, ZFP60, H2-Q1, RELA, C3,
+        ZFP14, ZFP57, ZFP180, ZFP383, ZFP382, ZFP420, H2-EB1, ZFP235, ZFP114, TNFSF14,
+        ZFP715, BAD, STAT2, ZFP719, POU2F2, H2-AA, PPP1CA, ZFP790, H2-M11, ZFP27, ZFP112,
+        ZFP111, ZFP551, H2-Q10
+      • Allograft rejection
+            adjP=5.66e-13  CombinedScore=333.7
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, TNF, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Type I diabetes mellitus
+            adjP=5.66e-13  CombinedScore=301.8
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, TNF, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        LTA, H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Graft-versus-host disease
+            adjP=5.66e-13  CombinedScore=320.4
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, TNF, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Estrogen signaling pathway
+            adjP=5.83e-11  CombinedScore=141.3
+        SHC2, KRT24, KRT23, KRT42, KRT20, KRT40, KRT33B, KRT33A, CREB3L3, KRT28, KRT27,
+        AKT2, KRT26, GPER1, KRT25, GABBR1, MAP2K2, KRT35, KRT13, KRT34, KRT12, KRT32,
+        KRT10, KRT31, KRT9, PLCB3, KRT19, KRT39, KRT17, KRT16, KRT15, KRT36, KRT14, RARA,
+        CALM3
+      • Antigen processing and presentation
+            adjP=5.43e-10  CombinedScore=155.4
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, TNF, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, NFYB, H2-M10.1, H2-M10.2, H2-T3,
+        H2-AA, H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Autoimmune thyroid disease
+            adjP=5.43e-10  CombinedScore=170.0
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Cellular senescence
+            adjP=2.48e-09  CombinedScore=90.5
+        H2-T24, H2-M9, H2-T23, H2-T22, LIN37, H2-M5, H2-M2, H2-Q6, SERPINE1, H2-M3, H2-Q7,
+        H2-Q4, H2-M1, H2-Q2, H2-Q1, RELA, RBBP4, AKT2, CAPN1, HIPK4, MAP2K2, TGFB1,
+        H2-M10.3, GADD45B, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, HIPK3, PPP1CA, CDK4, CDK2,
+        H2-M11, H2-M10.5, CALM3, H2-M10.6, H2-D1, H2-Q10, RAD9A
+      • Viral myocarditis
+            adjP=6.01e-09  CombinedScore=129.9
+        H2-T24, H2-T23, H2-M9, H2-T22, H2-M5, H2-Q6, H2-M2, H2-Q7, H2-M3, H2-Q4, H2-M1,
+        H2-Q2, H2-Q1, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10
+      • Human T-cell leukemia virus 1 infection
+            adjP=8.85e-09  CombinedScore=71.4
+        H2-T24, H2-M9, H2-T23, H2-T22, H2-M5, H2-M2, H2-Q6, H2-M3, H2-Q7, H2-Q4, H2-M1,
+        H2-Q2, TNF, H2-Q1, RELA, RELB, ZFP36, CREB3L3, KAT5, AKT2, STAT5A, STAT5B, H2-EB1,
+        SMAD4, MAP2K2, TGFB1, H2-M10.3, H2-M10.4, NFYB, H2-M10.1, H2-M10.2, H2-T3, H2-AA,
+        FOSL1, KAT2A, CDK4, LCK, CDK2, LTA, H2-M11, H2-M10.5, H2-M10.6, TCF3, H2-D1,
+        H2-Q10
+      • Epstein-Barr virus infection
+            adjP=3.27e-08  CombinedScore=66.6
+        H2-T24, H2-M9, H2-T23, H2-T22, H2-M5, HDAC1, H2-M2, H2-Q6, H2-M3, H2-Q7, H2-Q4,
+        H2-M1, H2-Q2, TNF, H2-Q1, RELA, RELB, PSMD8, AKT2, PSMD3, H2-EB1, H2-M10.3,
+        GADD45B, H2-M10.4, DDX58, H2-M10.1, STAT2, H2-M10.2, ISG15, H2-T3, H2-AA, PSMC4,
+        CDK4, TRAF6, CDK2, H2-M11, H2-M10.5, H2-M10.6, H2-D1, CD44, H2-Q10, NFKBIB
+      • Cell adhesion molecules (CAMs)
+            adjP=4.13e-07  CombinedScore=62.0
+        H2-T24, H2-M9, H2-T23, H2-T22, H2-M5, H2-M2, H2-Q6, H2-M3, H2-Q7, H2-Q4, H2-M1,
+        NRXN2, H2-Q2, PVR, H2-Q1, MADCAM1, LRRC4B, H2-EB1, H2-M10.3, H2-M10.4, H2-M10.1,
+        H2-M10.2, H2-T3, H2-AA, MAG, CLDN15, H2-M11, H2-M10.5, H2-M10.6, H2-D1, H2-Q10,
+        CD22, NECTIN2
+
+    --- Reactome_2022 top terms (HC_DOWN) ---
+      • Keratinization R-HSA-6805567
+            adjP=7.62e-13  CombinedScore=162.1
+        KRT24, KRT23, KRT20, CAPNS1, KRT28, KRT27, KRT26, KRT25, KRTAP1-5, KRTAP3-3,
+        KRTAP1-4, CAPN1, KRTAP3-2, KRTAP1-3, KRTAP3-1, KRTAP9-3, KRTAP9-1, KRTAP17-1,
+        KRT35, KRT34, KRT32, KRT31, KRT9, KRT39, KRT36, KRTAP29-1, KLK5, KLK8, KRT40,
+        KRT33B, KRT33A, KRTAP4-2, KRTAP4-1, CDSN, KRTAP4-9, JUP, KRTAP16-1, KRTAP4-8,
+        KRTAP4-6, KLK13, KRT13, KLK14, KRT12, KRT10, KLK12, KRT19, KRT17, KRT16, KRT15,
+        KRT14
+      • Developmental Biology R-HSA-1266738
+            adjP=1.48e-04  CombinedScore=26.8
+        NAB2, CASC3, TNF, ARHGAP35, PSMD8, RPS15, RPS6KA4, RPS16, CAPNS1, RPS19, AKT2,
+        PSMD3, KRTAP3-3, CAPN1, KRTAP3-2, KRTAP3-1, EPHB4, SCN1B, PDHX, MAP2K2, RPL23,
+        RPS5, KRTAP17-1, KRT9, CACNB1, MYL6, MAG, TYROBP, GRB7, SPTBN4, AGAP2, KLK5, KLK8,
+        KRT40, KRT33B, KRT33A, KRTAP4-2, PIP5K1C, KRTAP4-1, SPTBN2, VASP, RPL41, SMAD4,
+        KRTAP4-9, CDSN, TGFB1, JUP, KRTAP16-1, KRTAP4-8, KRTAP4-6, DRAP1, EFNA2, CDK4,
+        CDK2, ONECUT3, KRT24, KRT23, HIF3A, MED16, KRT20, KRT28, KRT27, KRT26, KRT25, PRX,
+        KRTAP1-5, KRTAP1-4, KRTAP1-3, AMH, PSENEN, MAP4K2, KRTAP9-3, KRTAP9-1, KRT35,
+        KRT34, PAX6, KRT32, KRT31, MED29, KAT2A, MED24, KRT39, KRT36, RARA, KRTAP29-1,
+        PLPPR3, RELA, RBBP4, PSMB3, ERBB2, AP2S1, POLR2E, POLR2I, PAK4, RPL19, LGI4,
+        PCGF2, KLK13, KRT13, KLK14, KRT12, KRT10, DEK, KLK12, KRT19, KRT17, PSMC4, WT1,
+        KRT16, KRT15, KRT14, FAU, AGRN, FOXA3
+
+================================================================================
+E. PRERANK GSEA ON SIGNED ENHANCER-WEIGHTED LFC (FDR < 0.25)
+================================================================================
+  Positive NES = pathway sits in genes whose linked enhancers GAINED H3K27ac.
+  Negative NES does NOT mean DOI suppressed the pathway (down-enhancer end of rank only).
+
+  --- GO_Biological_Process_2023 ---  (5 significant sets)
+    • Intermediate Filament Organization (GO:0045109)              NES=-4.60  FDR=0.00e+00
+    • Epithelial Cell Differentiation (GO:0030855)                 NES=-3.23  FDR=0.00e+00
+    • Epithelium Development (GO:0060429)                          NES=-3.21  FDR=0.00e+00
+    • Epidermis Development (GO:0008544)                           NES=-2.31  FDR=2.46e-02
+    • Natural Killer Cell Activation Involved In Immune Response ( NES=-1.96  FDR=2.18e-01
+
+  --- KEGG_2019_Mouse ---  (37 significant sets)
+    • Herpes simplex virus 1 infection                             NES=-5.23  FDR=0.00e+00
+    • Graft-versus-host disease                                    NES=-5.10  FDR=0.00e+00
+    • Allograft rejection                                          NES=-4.50  FDR=0.00e+00
+    • Type I diabetes mellitus                                     NES=-4.48  FDR=0.00e+00
+    • Antigen processing and presentation                          NES=-4.15  FDR=0.00e+00
+    • Phagosome                                                    NES=-3.63  FDR=0.00e+00
+    • Viral myocarditis                                            NES=-3.45  FDR=0.00e+00
+    • Human T-cell leukemia virus 1 infection                      NES=-3.23  FDR=0.00e+00
+    • Cellular senescence                                          NES=-3.18  FDR=0.00e+00
+    • Estrogen signaling pathway                                   NES=-3.01  FDR=0.00e+00
+    • Viral carcinogenesis                                         NES=-2.95  FDR=0.00e+00
+    • Autoimmune thyroid disease                                   NES=-2.83  FDR=0.00e+00
+
+  --- MSigDB_Hallmark_2020 ---  (2 significant sets)
+    • UV Response Dn                                               NES=+1.97  FDR=1.16e-01
+    • Interferon Gamma Response                                    NES=+1.77  FDR=2.04e-01
+
+================================================================================
+F. STRING PPI NETWORK & HUBS
+================================================================================
+  network: 35 nodes, 23 edges (conf>=0.7, taxon 10090, carriage-return join)
+  Top hub genes [gene  degree  dir  w_lfc]:
+    Efhc2            degree=  2  UP  w_lfc=+0.296
+    Dusp21           degree=  2  UP  w_lfc=+0.342
+    Rps29            degree=  2  UP  w_lfc=+0.426
+    Gpd2             degree=  2  UP  w_lfc=+0.403
+    Rpl10l           degree=  2  UP  w_lfc=+0.478
+    Samt1d           degree=  2  UP  w_lfc=+0.259
+    Samt1            degree=  2  UP  w_lfc=+0.258
+    Kdm5c            degree=  2  UP  w_lfc=+0.536
+    Rpl36al          degree=  2  UP  w_lfc=+0.426
+    Ribc1            degree=  2  UP  w_lfc=+0.528
+    Samt1c           degree=  2  UP  w_lfc=+0.258
+    Araf             degree=  1  UP  w_lfc=+0.378
+    Kdm6a            degree=  1  UP  w_lfc=+0.343
+    Plpp3            degree=  1  UP  w_lfc=+0.546
+    Hsd17b10         degree=  1  UP  w_lfc=+0.530
+    Tspyl2           degree=  1  UP  w_lfc=+0.541
+    Arf6             degree=  1  UP  w_lfc=+0.426
+    Gpr143           degree=  1  UP  w_lfc=+0.521
+    C8b              degree=  1  UP  w_lfc=+0.546
+    Gk               degree=  1  UP  w_lfc=+0.548
+    Pde4b            degree=  1  UP  w_lfc=+0.501
+    Wdr78            degree=  1  UP  w_lfc=+0.551
+    Dab1             degree=  1  UP  w_lfc=+0.560
+    Magea3           degree=  1  UP  w_lfc=+0.220
+    Obp1b            degree=  1  UP  w_lfc=+0.424
+  Figure: figures/string_hubs.png
+
+================================================================================
+G. 1:1 MOUSE→HUMAN ORTHOLOGS (homologene)
+================================================================================
+  1:1 orthologs mapped : 0 / 5112 high-confidence genes
+  GMTs written: DOI_7D_HC_mouse.gmt, DOI_7D_HC_human.gmt
+  (mouse symbols were NOT uppercased into fake human genes)
+
+================================================================================
+H. SYNAPTIC / NEURONAL LEADING EDGE CARRIED BY CLEANED HC_UP GENES
+================================================================================
+  Reuses the prior Enrichr ALL output; keeps only members also in HC_UP.
+  • [Reactome_2022] Neuronal System R-HSA-112316
+        adjP=2.78e-02  members=118  in HC_UP=33
+        RPS6KA3, CACNA2D1, GABRG3, CACNB4, KCNQ1, SLC22A1, SLC1A1, CACNA1E, SLC1A7, KCNV1,
+        GRIN2A, KCNV2, GRIA3, GRIN2B, LRRTM3, DLGAP1, SLC18A3, KCND2, ARHGEF9, LRRC7,
+        IL1RAPL1, NLGN1, NRXN1, PRKX, AKAP5, GLRA2, SLITRK2, SLITRK4, SLITRK6, SLITRK5,
+        CACNG4, GABRA5, GABRA3
+  • [GO_Biological_Process_2023] Synapse Organization (GO:0050808)
+        adjP=3.02e-04  members=56  in HC_UP=23
+        APP, CTNND2, LRRC4, ZDHHC2, NRCAM, APPL1, MUSK, F2R, ANK3, DKK1, DNM3, CACNB4,
+        GPM6A, NLGN1, ZC4H2, NRXN1, SLITRK2, SLITRK6, PAK3, RAB39B, REST, SDK2, ADGRL3
+  • [GO_Biological_Process_2023] Neuron Projection Morphogenesis (GO:0048812)
+        adjP=1.95e-02  members=54  in HC_UP=20
+        APP, CTNND2, NRCAM, ATP7A, MEF2A, ANK3, SLC9A6, KIF20B, GPM6A, NLGN1, PLPPR4,
+        SLITRK2, SLITRK4, SLITRK6, MAP6, SLITRK5, CTNNA2, PAK3, MYO16, CNTN4
+  • [MGI_Mammalian_Phenotype_Level_4_2021] reduced long term potentiation MP:0001473
+        adjP=2.18e-02  members=46  in HC_UP=16
+        SLC24A2, APP, FMR1, UBE3A, VLDLR, AKAP5, LRP8, GRIN2A, PAK3, TRPC5, CRBN, GRIN2B,
+        ESR2, FGF14, SP4, ITM2B
+  • [MGI_Mammalian_Phenotype_Level_4_2021] abnormal CNS synaptic transmission MP:0002206
+        adjP=3.11e-02  members=40  in HC_UP=15
+        CHRM2, NLGN1, FMR1, RPS6KA3, LRRTM3, PDE4B, IQSEC2, KIDINS220, CACNA2D1, GRIN2B,
+        CACNB4, DLG2, FGF14, IL1RAPL1, CD247
+  • [GO_Biological_Process_2023] Positive Regulation Of Neuron Projection Development (GO:001
+        adjP=3.64e-02  members=37  in HC_UP=15
+        ALK, NLGN1, PLPPR5, VLDLR, LRP8, ALKAL2, ARSB, MUSK, KIDINS220, ZDHHC15, LRRC7,
+        PLXNB3, ROR1, PRKD1, TOX
+  • [KEGG_2019_Mouse] Axon guidance
+        adjP=2.39e-03  members=64  in HC_UP=11
+        LRRC4, ROBO1, TRPC5, PIK3R1, MYL12B, EFNB2, EFNB1, SLIT3, PAK3, PLXNA4, PLXNB3
+  • [KEGG_2019_Mouse] Neurotrophin signaling pathway
+        adjP=4.84e-02  members=41  in HC_UP=10
+        MAGED1, PIK3R1, RPS6KA3, MAPK8, ARHGDIB, MAP2K1, RIPK2, KIDINS220, MAPK10, SOS2
+  • [MGI_Mammalian_Phenotype_Level_4_2021] abnormal spatial working memory MP:0008428
+        adjP=2.80e-02  members=30  in HC_UP=9
+        GPR88, GRIN2A, PDE4B, IDS, FOXB1, RPS7, IQSEC2, LRRC7, ITM2B
+  • [MGI_Mammalian_Phenotype_Level_4_2021] abnormal long term potentiation MP:0002207
+        adjP=2.80e-02  members=17  in HC_UP=6
+        APP, GABRA5, CTNND2, UBE3A, VLDLR, GRIA3
+
+================================================================================
+I. CAVEATS
+================================================================================
+  - RNA/7d transcription concordance is NOT a Stage-3 analysis; RNA_means.tsv.gz was
+    never written by the pipeline. It requires a separate count matrix.
+  - The ABC-score leaderboard and the 4,362-gene ORA from the prior pipeline are
+    REPLACED here, not reused as inputs.
+  - Negative-NES and MIXED-direction genes carry no directional DOI claim.
+
+================================================================================
+J. OUTPUT FILES
+================================================================================
+  /content/ABC_DOI/STAGE3/DOI_7D_HC_human.gmt  (0 KB)
+  /content/ABC_DOI/STAGE3/DOI_7D_HC_mouse.gmt  (64 KB)
+  /content/ABC_DOI/STAGE3/figures/architecture.png  (147 KB)
+  /content/ABC_DOI/STAGE3/figures/string_hubs.png  (66 KB)
+  /content/ABC_DOI/STAGE3/gene_level.tsv  (3025 KB)
+  /content/ABC_DOI/STAGE3/gsea_GO_Biological_Process_2023.tsv  (273 KB)
+  /content/ABC_DOI/STAGE3/gsea_GO_Biological_Process_2023/gene_sets.gmt  (247 KB)
+  /content/ABC_DOI/STAGE3/gsea_GO_Biological_Process_2023/gseapy.gene_set.prerank.report.csv  (260 KB)
+  /content/ABC_DOI/STAGE3/gsea_GO_Biological_Process_2023/prerank_data.rnk  (130 KB)
+  /content/ABC_DOI/STAGE3/gsea_KEGG_2019_Mouse.tsv  (55 KB)
+  /content/ABC_DOI/STAGE3/gsea_KEGG_2019_Mouse/gene_sets.gmt  (52 KB)
+  /content/ABC_DOI/STAGE3/gsea_KEGG_2019_Mouse/gseapy.gene_set.prerank.report.csv  (53 KB)
+  /content/ABC_DOI/STAGE3/gsea_KEGG_2019_Mouse/prerank_data.rnk  (130 KB)
+  /content/ABC_DOI/STAGE3/gsea_MSigDB_Hallmark_2020.tsv  (11 KB)
+  /content/ABC_DOI/STAGE3/gsea_MSigDB_Hallmark_2020/gene_sets.gmt  (12 KB)
+  /content/ABC_DOI/STAGE3/gsea_MSigDB_Hallmark_2020/gseapy.gene_set.prerank.report.csv  (11 KB)
+  /content/ABC_DOI/STAGE3/gsea_MSigDB_Hallmark_2020/prerank_data.rnk  (130 KB)
+  /content/ABC_DOI/STAGE3/high_confidence_genes.tsv  (713 KB)
+  /content/ABC_DOI/STAGE3/mixed_direction_genes.tsv  (1863 KB)
+  /content/ABC_DOI/STAGE3/mouse_human_orthologs.tsv  (0 KB)
+  /content/ABC_DOI/STAGE3/ora_HC_DOWN.tsv.gz  (305 KB)
+  /content/ABC_DOI/STAGE3/ora_HC_UP.tsv.gz  (569 KB)
+  /content/ABC_DOI/STAGE3/string_hubs.tsv  (1 KB)
+  /content/ABC_DOI/STAGE3/string_network.tsv  (2 KB)
+  /content/ABC_DOI/STAGE3/synaptic_terms_in_HC_UP.tsv  (1 KB)
+
+================================================================================
+END OF SUMMARY
+================================================================================
